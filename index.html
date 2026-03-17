@@ -200,6 +200,48 @@ nav.hidden { transform: translateY(-100%); }
   40% { transform: scale(1); opacity: 0.8; }
 }
 
+/* TIER BADGES */
+.tier {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 5px;
+  margin: 2px 2px;
+  letter-spacing: 0.02em;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+.tier-1 {
+  background: rgba(46,204,113,0.15);
+  color: #2ecc71;
+  border: 1px solid rgba(46,204,113,0.3);
+}
+.tier-2 {
+  background: rgba(243,156,18,0.15);
+  color: #f39c12;
+  border: 1px solid rgba(243,156,18,0.3);
+}
+.tier-3 {
+  background: rgba(231,76,60,0.15);
+  color: #e74c3c;
+  border: 1px solid rgba(231,76,60,0.3);
+}
+
+/* Tier badges in evidence tiers page — larger */
+.tier-block {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin: 16px 0;
+}
+.tier-block .tier { flex-shrink: 0; font-size: 11px; }
+.tier-block p { margin: 0; font-size: 15px; }
+
 .error-box {
   text-align: center; padding: 120px var(--gutter);
   font-family: var(--mono); font-size: 14px; color: var(--accent2);
@@ -297,6 +339,32 @@ function rewriteLinks(html, fromPage) {
   });
 }
 
+function styleTiers(html) {
+  // Pass 1: Bold wrapped — <strong>Tier N...</strong>
+  html = html.replace(/<strong>Tier\s*1([^<]*)<\/strong>/gi, function(m, rest) {
+    return '<span class="tier tier-1">Tier 1' + rest + '</span>';
+  });
+  html = html.replace(/<strong>Tier\s*2([^<]*)<\/strong>/gi, function(m, rest) {
+    return '<span class="tier tier-2">Tier 2' + rest + '</span>';
+  });
+  html = html.replace(/<strong>Tier\s*3([^<]*)<\/strong>/gi, function(m, rest) {
+    return '<span class="tier tier-3">Tier 3' + rest + '</span>';
+  });
+
+  // Pass 2: Standalone Tier N in table cells or plain text (not already inside a span)
+  html = html.replace(/(<td[^>]*>)([^<]*?)(Tier\s+1)/gi, function(m, pre, mid, t) {
+    return pre + mid + '<span class="tier tier-1">Tier 1</span>';
+  });
+  html = html.replace(/(<td[^>]*>)([^<]*?)(Tier\s+2)/gi, function(m, pre, mid, t) {
+    return pre + mid + '<span class="tier tier-2">Tier 2</span>';
+  });
+  html = html.replace(/(<td[^>]*>)([^<]*?)(Tier\s+3)/gi, function(m, pre, mid, t) {
+    return pre + mid + '<span class="tier tier-3">Tier 3</span>';
+  });
+
+  return html;
+}
+
 function render(page) {
   if (page === current) return;
   current = page;
@@ -330,6 +398,7 @@ function render(page) {
   }).then(function(md) {
     var html = marked.parse(md);
     html = rewriteLinks(html, page);
+    html = styleTiers(html);
 
     var out = '';
 
