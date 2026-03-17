@@ -1,0 +1,2 @@
+# consciousness
+Ideas about consciousness
