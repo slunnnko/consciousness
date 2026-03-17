@@ -70,7 +70,7 @@ nav.hidden { transform: translateY(-100%); }
 /* PAGE */
 .page {
   max-width: var(--max-w); margin: 0 auto;
-  padding: 80px var(--gutter) 80px;
+  padding: 112px var(--gutter) 80px;
   min-height: 100vh;
 }
 .page.fade-in { animation: fadeIn 0.35s ease forwards; }
@@ -200,6 +200,86 @@ nav.hidden { transform: translateY(-100%); }
   40% { transform: scale(1); opacity: 0.8; }
 }
 
+/* TIER FILTER BAR */
+.filter-bar {
+  position: fixed; top: 46px; left: 0; right: 0; z-index: 99;
+  background: rgba(12,12,14,0.92);
+  backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+nav.hidden + .filter-bar, .filter-bar.hidden { transform: translateY(calc(-100% - 46px)); }
+.filter-inner {
+  max-width: var(--max-w); margin: 0 auto;
+  padding: 8px var(--gutter);
+  display: flex; align-items: center; gap: 8px;
+}
+.filter-label {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-dim); letter-spacing: 0.06em;
+  text-transform: uppercase; margin-right: 4px; white-space: nowrap;
+}
+.filter-btn {
+  font-family: var(--mono); font-size: 12px; font-weight: 500;
+  padding: 5px 12px; border-radius: 6px;
+  cursor: pointer; transition: all 0.2s;
+  border: 1px solid transparent;
+  user-select: none; -webkit-user-select: none;
+  white-space: nowrap;
+}
+.filter-btn[data-tier="1"] {
+  background: rgba(46,204,113,0.15); color: #2ecc71; border-color: rgba(46,204,113,0.3);
+}
+.filter-btn[data-tier="1"].off {
+  background: transparent; color: var(--text-dim); border-color: var(--border);
+}
+.filter-btn[data-tier="2"] {
+  background: rgba(243,156,18,0.15); color: #f39c12; border-color: rgba(243,156,18,0.3);
+}
+.filter-btn[data-tier="2"].off {
+  background: transparent; color: var(--text-dim); border-color: var(--border);
+}
+.filter-btn[data-tier="3"] {
+  background: rgba(231,76,60,0.15); color: #e74c3c; border-color: rgba(231,76,60,0.3);
+}
+.filter-btn[data-tier="3"].off {
+  background: transparent; color: var(--text-dim); border-color: var(--border);
+}
+.filter-btn:hover { opacity: 0.85; }
+.filter-spacer { flex: 1; }
+.filter-reset {
+  font-family: var(--mono); font-size: 11px;
+  color: var(--text-dim); background: none; border: none;
+  cursor: pointer; padding: 4px 8px; transition: color 0.2s;
+  white-space: nowrap;
+}
+.filter-reset:hover { color: var(--text); }
+
+/* FILTERED CONTENT */
+[data-tier-section] { transition: opacity 0.25s ease, max-height 0.35s ease; }
+[data-tier-section].tier-hidden {
+  opacity: 0.08;
+  pointer-events: none;
+  max-height: 60px;
+  overflow: hidden;
+  position: relative;
+}
+[data-tier-section].tier-hidden::after {
+  content: '';
+  position: absolute; bottom: 0; left: 0; right: 0; height: 40px;
+  background: linear-gradient(transparent, var(--bg));
+}
+tr[data-tier-row].tier-hidden {
+  opacity: 0.08;
+}
+tr[data-tier-row].tier-hidden td {
+  max-height: 0; padding-top: 0; padding-bottom: 0;
+  overflow: hidden; border: none;
+  transition: all 0.25s ease;
+}
+
+/* Adjust page padding for filter bar — handled in .page rule */
+
 /* TIER BADGES */
 .tier {
   display: inline-block;
@@ -252,7 +332,7 @@ nav.hidden { transform: translateY(-100%); }
   body { font-size: 16px; }
   .md table { font-size: 13px; }
   .md th, .md td { padding: 8px 8px; }
-  .page { padding-top: 72px; }
+  .page { padding-top: 100px; }
 }
 </style>
 </head>
@@ -267,6 +347,17 @@ nav.hidden { transform: translateY(-100%); }
     <span class="nav-v">v2.3</span>
   </div>
 </nav>
+
+<div class="filter-bar" id="filterBar">
+  <div class="filter-inner">
+    <span class="filter-label">Filter:</span>
+    <button class="filter-btn" data-tier="1" onclick="toggleFilter(1)">Tier 1</button>
+    <button class="filter-btn" data-tier="2" onclick="toggleFilter(2)">Tier 2</button>
+    <button class="filter-btn" data-tier="3" onclick="toggleFilter(3)">Tier 3</button>
+    <span class="filter-spacer"></span>
+    <button class="filter-reset" id="filterReset" onclick="resetFilters()" style="display:none">Reset</button>
+  </div>
+</div>
 
 <main class="page fade-in" id="page" data-page="home"></main>
 
@@ -411,6 +502,8 @@ function render(page) {
 
     out += '<div class="md">' + html + '</div>';
     el.innerHTML = out;
+    tagTierSections();
+    applyFilters();
     window.scrollTo(0, 0);
 
   }).catch(function(err) {
@@ -419,14 +512,123 @@ function render(page) {
   });
 }
 
+// ---- TIER FILTERING ----
+
+var activeTiers = { 1: true, 2: true, 3: true };
+
+function detectTiers(el) {
+  var tiers = [];
+  if (el.querySelector('.tier-1') || el.innerHTML.match(/tier-1/)) tiers.push(1);
+  if (el.querySelector('.tier-2') || el.innerHTML.match(/tier-2/)) tiers.push(2);
+  if (el.querySelector('.tier-3') || el.innerHTML.match(/tier-3/)) tiers.push(3);
+  return tiers;
+}
+
+function tagTierSections() {
+  var mdEl = document.querySelector('.md');
+  if (!mdEl) return;
+
+  // Strategy 1: Tag sections (h2 and everything until next h2)
+  var children = Array.from(mdEl.children);
+  var sectionEls = [];
+  var currentGroup = [];
+  var groupTiers = [];
+
+  children.forEach(function(child, i) {
+    var isH2 = child.tagName === 'H2';
+    var isLast = i === children.length - 1;
+
+    if (isH2 && currentGroup.length > 0) {
+      // Wrap previous group
+      finishGroup(currentGroup, groupTiers, mdEl, sectionEls);
+      currentGroup = [];
+      groupTiers = [];
+    }
+
+    currentGroup.push(child);
+    var ct = detectTiers(child);
+    ct.forEach(function(t) { if (groupTiers.indexOf(t) < 0) groupTiers.push(t); });
+
+    if (isLast && currentGroup.length > 0) {
+      finishGroup(currentGroup, groupTiers, mdEl, sectionEls);
+    }
+  });
+
+  // Strategy 2: Tag individual table rows
+  mdEl.querySelectorAll('tr').forEach(function(tr) {
+    var rt = detectTiers(tr);
+    if (rt.length > 0) {
+      tr.setAttribute('data-tier-row', rt.join(','));
+    }
+  });
+
+  // Strategy 3: Tag list items
+  mdEl.querySelectorAll('li').forEach(function(li) {
+    var lt = detectTiers(li);
+    if (lt.length > 0) {
+      li.setAttribute('data-tier-section', lt.join(','));
+    }
+  });
+}
+
+function finishGroup(group, tiers, parent, out) {
+  if (tiers.length === 0) return;
+  // Wrap group in a div with tier data
+  var wrapper = document.createElement('div');
+  wrapper.setAttribute('data-tier-section', tiers.join(','));
+  // Insert wrapper before first element of group
+  parent.insertBefore(wrapper, group[0]);
+  group.forEach(function(el) { wrapper.appendChild(el); });
+  out.push(wrapper);
+}
+
+function toggleFilter(tier) {
+  activeTiers[tier] = !activeTiers[tier];
+  applyFilters();
+}
+
+function resetFilters() {
+  activeTiers = { 1: true, 2: true, 3: true };
+  applyFilters();
+}
+
+function applyFilters() {
+  var allActive = activeTiers[1] && activeTiers[2] && activeTiers[3];
+
+  // Update buttons
+  document.querySelectorAll('.filter-btn').forEach(function(btn) {
+    var t = parseInt(btn.getAttribute('data-tier'));
+    btn.classList.toggle('off', !activeTiers[t]);
+  });
+
+  // Show/hide reset
+  document.getElementById('filterReset').style.display = allActive ? 'none' : '';
+
+  // Filter sections
+  document.querySelectorAll('[data-tier-section]').forEach(function(el) {
+    var tiers = el.getAttribute('data-tier-section').split(',').map(Number);
+    var visible = allActive || tiers.some(function(t) { return activeTiers[t]; });
+    el.classList.toggle('tier-hidden', !visible);
+  });
+
+  // Filter table rows
+  document.querySelectorAll('[data-tier-row]').forEach(function(tr) {
+    var tiers = tr.getAttribute('data-tier-row').split(',').map(Number);
+    var visible = allActive || tiers.some(function(t) { return activeTiers[t]; });
+    tr.classList.toggle('tier-hidden', !visible);
+  });
+}
+
 window.addEventListener('hashchange', function() { render(hashToPage()); });
 render(hashToPage());
 
-// Nav auto-hide
+// Nav + filter bar auto-hide
 var lastY = 0;
 window.addEventListener('scroll', function() {
   var y = window.pageYOffset;
-  document.getElementById('nav').classList.toggle('hidden', y > lastY && y > 80);
+  var hide = y > lastY && y > 80;
+  document.getElementById('nav').classList.toggle('hidden', hide);
+  document.getElementById('filterBar').classList.toggle('hidden', hide);
   lastY = y;
 }, { passive: true });
 </script>
