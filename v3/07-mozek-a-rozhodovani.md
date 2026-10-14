@@ -74,7 +74,7 @@ Pohybující se tělo naráží na dva problémy, které rozptýlená nervová s
 - [k ověření] Larva sumky plave a má jednoduchý mozek; po přisednutí na kámen větší část nervové soustavy vstřebá. Známá ilustrace, že mozek slouží pohybu.
 - [k ověření] Část oboru považuje tvrzení „allostáza je hlavní funkce mozku“ za příliš silné.
 
-Co z toho plyne [odvozeno]: Mozek vznikl jako předvídající a vybírající řídící centrum pohybujícího se těla. Myšlení, plánování a řeč jsou pozdější rozšíření téže smyčky.
+Co z toho plyne [odvozeno]: Mozek vznikl jako předvídající a vybírající řídicí centrum pohybujícího se těla. Myšlení, plánování a řeč jsou pozdější rozšíření téže smyčky.
 
 ## Jak funguje lidský mozek: šest principů
 
@@ -152,7 +152,7 @@ Většina regulace těla a mnoho rozhodnutí běží bez vědomí. Nejlépe podl
 
 ### Simulace soutěže možností [odvozeno]
 
-Ilustrační model, čísla nepocházejí z měření. Tři možnosti (najíst se, dodělat úkol, odpočinout si) sbírají v krocích po 10 ms „hlasy“ úměrné své hodnotě, k nimž se přičítá náhodný šum; vyhraje ta, která první přesáhne práh, nejdéle do 2 s. Hodnoty při vstupech 0–1: najíst se = 0,15 + 0,9 × hlad − 0,15 × únava; dodělat úkol = 0,15 + 0,9 × důležitost − 0,6 × únava; odpočinout si = 0,05 + 0,9 × únava − 0,25 × důležitost. Princip soupeřících akumulátorů: Usher & McClelland 2001; Gold & Shadlen 2007 [k ověření].
+Ilustrační model, čísla nepocházejí z měření. Tři možnosti (najíst se, dodělat úkol, odpočinout si) sbírají v krocích po 10 ms „hlasy“ úměrné své hodnotě, k nimž se přičítá náhodný šum; vyhraje ta, která první přesáhne práh, nejdéle do 2 s. Hodnoty při vstupech 0–1: najíst se = 0,15 + 0,9 × hlad − 0,15 × únava; dodělat úkol = 0,15 + 0,9 × důležitost − 0,6 × únava; odpočinout si = 0,05 + 0,9 × únava − 0,25 × důležitost. Princip soutěžících akumulátorů: Usher & McClelland 2001; Gold & Shadlen 2007 [k ověření].
 
 ### Odkud vychází
 
@@ -168,7 +168,7 @@ Odpověď [odvozeno]: Rozhodnutí vychází ze soutěže možností rozprostřen
 ### Stav těla mění rozhodnutí (T2)
 
 - Proč to plyne: Hodnoty i ceny se počítají vzhledem k potřebám těla. Hlad, únava nebo nedostatek spánku tak posouvají, co vyhraje.
-- K čemu je to dobré: Důležitá rozhodnutí dělat najídený a vyspaný; když to nejde, aspoň o tom vědět.
+- K čemu je to dobré: Důležitá rozhodnutí dělat najedený a vyspaný; když to nejde, aspoň o tom vědět.
 - Co by to vyvrátilo: Kdyby kontrolované změny stavu těla (hlad, spánková deprivace) hodnocení možností neměnily.
 
 ### Vůle působí hlavně přes podmínky soutěže (T2–T3)
@@ -254,7 +254,7 @@ Verdikt [odvozeno]: Model v3.x došel ke stejné páteři, ke které míří sou
 - **Predikční chyba**: Rozdíl mezi tím, co mozek čekal, a tím, co přišlo. Mozek ji využije k opravě odhadu, nebo k akci, která svět přizpůsobí odhadu.
 - **Predikční chyba odměny**: Signál „dopadlo to líp, nebo hůř, než jsem čekal“. Krátké záblesky dopaminových neuronů. Mozek se z nich učí, co od čeho čekat.
 - **Prediktivní zpracování**: Mozek odhaduje, co přijde, a zpracovává hlavně odchylky od odhadu. Vnímání je z velké části odhad, který smysly průběžně opravují. Rozdíl mezi odhadem a skutečností se nazývá predikční chyba.
-- **Prekérnost**: Systém zanikne, pokud si sám neudrží své proměnné. živý organismus musí neustále hlídat energii, teplotu a celistvost. Z toho plyne nejzákladnější motivace: udržet se.
+- **Prekérnost**: Systém zanikne, pokud si sám neudrží své proměnné. Živý organismus musí neustále hlídat energii, teplotu a celistvost. Z toho plyne nejzákladnější motivace: udržet se.
 - **Princip volné energie (FEP)**: Rámec Karla Fristona: systémy, které přetrvávají, minimalizují překvapení. Matematický popis toho, jak se trvající systém chová vzhledem ke svému modelu světa. V roce 2023 jeho kvantitativní předpovědi sedly na kultury krysích neuronů. Jaké cíle organismus má, FEP sám neurčuje; ty nastavila evoluce.
 - **Proximátní a ultimátní vysvětlení**: Jak něco funguje teď, a proč to evoluce vytvořila. Hlad má proximátní příčinu (klesl cukr) i ultimátní (předkové bez hladu nepřežili). Obě odpovědi platí současně.
 - **Přední cingulární kůra**: Oblast, která váží, jestli se vyplatí námaha. Sleduje konflikty a chyby a odhaduje, kolik kontroly a úsilí se vyplatí vložit (k ověření: Shenhav a kol. 2013).
@@ -307,6 +307,6 @@ Verdikt [odvozeno]: Model v3.x došel ke stejné páteři, ke které míří sou
 - Shenhav, Botvinick & Cohen 2013, Neuron: očekávaná hodnota kontroly.
 - Sterling 2012, Physiology & Behavior: allostáza jako prediktivní regulace.
 - Sterling & Laughlin 2015, MIT Press: Principles of Neural Design.
-- Usher & McClelland 2001, Psychological Review: soupeřící akumulátory.
+- Usher & McClelland 2001, Psychological Review: soutěžící akumulátory.
 - Westbrook a kol. 2020, Science: dopamin a ochota ke kognitivnímu úsilí.
 - Wood & Rünger 2016, Annual Review of Psychology: psychologie návyků.
