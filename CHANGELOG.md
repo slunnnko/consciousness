@@ -1,8 +1,26 @@
 # Changelog
 
-[← Back to README](../README.md)
+[← Back to README](README.md)
 
 ---
+
+## v3.2 — 14. 10. 2026 (kandidát konsolidace)
+
+- Nová složka `v3/` s konsolidací: architektura v3.x, ověřená errata, strukturální rozpory, rozhodnutí k potvrzení autorem, návrh zpřesněného jádra, kandidáti z chatů projektu, doprovodná syntéza o původu mozku a rozhodování a protokol pro příspěvky AI modelů.
+- Opravy faktů (ověřeno 14. 10. 2026): rok vydání a výsledky studie Cogitate (Nature 2025), kritika IIT v Nature Neuroscience 2025, Ficco a kol. 2021 místo „Ficco 2024“, PCI pod psilocybinem beze změny, sporné čištění mozku ve spánku, lucidní snění a artefakty z pohybů očí, nedohledatelná metaanalýza „Cortese 2024 Lancet“, skrytá kognice u čtvrtiny nereagujících pacientů, data o cessation.
+- Otevřená rozhodnutí: postoj P-VAL, vrstva 0, A/B hierarchie, módy vědomí, umístění P-MODE5, přestavba na tři objekty.
+
+## v3.1 — květen 2026 (pracovní verze, mimo repozitář)
+
+- Rešeršní kolo s literaturou 2023–2026; P-VAL ve střední pozici (Path C); rozdělení P-CMPLX2 na nedvojný stav a cessation; požadavek kvantitativní divergence pro vrstvu 0; validace vrstev po jedné.
+
+## v3.0 — duben 2026 (mimo repozitář)
+
+- Architektonická přestavba: 9 vrstev (nové L0 Replikační imperativ a L8 PCI) a 3 principy napříč vrstvami (P-CMPLX, P-VAL, P-REPL); FEP rozdělený na mechanismus, míru a odmítnutou univerzální biologii; anatomie po studii Cogitate; 44 deklarovaných predikcí.
+
+## v2.4–v2.6 — duben 2026 (mimo repozitář)
+
+- Audit proti literatuře 2023–2026 a externí oponentura (PCI, REBUS, anatomie po Cogitate).
 
 ## v2.3 — 17 March 2026
 

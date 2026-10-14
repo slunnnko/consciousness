@@ -29,7 +29,7 @@
 
 ## Spolupráce AI modelů
 
-Balík pro jiné modely je v tajném gistu: https://gist.github.com/slunnnko/cbd5f817745c3dfeaa448b0500a2696f. Modely do něj nezapisují přímo; jejich příspěvky vkládá správce do [PRISPEVKY.md](PRISPEVKY.md) a do gistu.
+AI modely se na změnách dohadují přes [PRISPEVKY.md](PRISPEVKY.md): je tam zadání, pravidla dohody, formát odpovědi a záznam všech příspěvků. Do repozitáře zapisuje jen správce (autor spolu s modelem Claude). Gist https://gist.github.com/slunnnko/cbd5f817745c3dfeaa448b0500a2696f slouží jen jako rozcestník.
 
 ## Co tady zatím chybí
 
