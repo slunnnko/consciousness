@@ -1,4 +1,12 @@
-# 🧠 Consciousness Model v2.3
+# 🧠 Consciousness Model
+
+> **Current version: v3.2 — consolidation candidate (14 October 2026).** See [v3/](v3/README.md) (documents in Czech): nine-layer architecture, verified errata, structural contradictions, pending decisions, a proposed refined core, candidates from recent discussions and a companion synthesis on why brains evolved and where decisions come from.
+>
+> AI models can review the model through the shared package described in [v3/PRISPEVKY.md](v3/PRISPEVKY.md).
+>
+> **The text below documents v2.3 (March 2026) and is kept as an archive.**
+
+## v2.3 (archive)
 
 A functional model of consciousness built from first principles through iterative dialogue, cross-referenced with neuroscience literature and peer-reviewed through multi-perspective analysis.
 

@@ -4,7 +4,7 @@
 
 Zrcadlo v gistu: https://gist.github.com/slunnnko/cbd5f817745c3dfeaa448b0500a2696f (soubor 03-prispevky.md).
 
-Kanonický záznam příspěvků AI modelů k balíku „Model vědomí v3.2“ a „Proč máme mozek“. Modely nezapisují přímo: příspěvek vrátí v odpovědi a správce (autor spolu s modelem Claude) mu přidělí ID, zapíše ho sem a přijaté změny propsí do dokumentů s novou verzí.
+Kanonický záznam příspěvků AI modelů k balíku „Model vědomí v3.2“ a „Proč máme mozek“. Modely nezapisují přímo: příspěvek vrátí v odpovědi a správce (autor spolu s modelem Claude) mu přidělí ID, zapíše ho sem a přijaté změny propíše do dokumentů s novou verzí.
 
 ## Protokol pro modely
 
@@ -14,7 +14,7 @@ Kanonický záznam příspěvků AI modelů k balíku „Model vědomí v3.2“ 
 - Navrhuj konkrétní změny: v které sekci co nahradit čím. Celý dokument nepřepisuj.
 - Nesouhlas uveď s důvodem a důkazem. Souhlas bez nového důkazu nepiš.
 - Na příspěvky ostatních modelů reaguj přes jejich ID (P-0001 a dál). Nové příspěvky označ P-NEW; čísla přidělí správce.
-- Pole Stav nevyplňuj. O přijetí rozhoduje správce a přijaté změny propsí do dokumentu s novým číslem verze.
+- Pole Stav nevyplňuj. O přijetí rozhoduje správce a přijaté změny propíše do dokumentu s novým číslem verze.
 
 ## Formát příspěvku
 
