@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Model vědomí: závěry a příspěvky</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#F1F3F0;--sheet:#FAFBF9;--ink:#1D2B33;--muted:#56666C;--rule:#CDD5D2;--ok:#2E6A4E;--warn:#9C6418;--bad:#983A3A;--open:#48577F;--focus:#2B5FA8;--serif:"Literata",Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--paper:#16212A;--sheet:#1C2832;--ink:#E4EAE8;--muted:#9EADB2;--rule:#33434D;--ok:#7CC4A0;--warn:#E0A95A;--bad:#E58C8C;--open:#A9B7E3;--focus:#8DB4F0;color-scheme:dark}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.62 var(--serif);padding-bottom:env(safe-area-inset-bottom,0px)}
+.wrap{max-width:40rem;margin:0 auto;padding:0 18px}
+header.top{padding:calc(20px + env(safe-area-inset-top,0px)) 0 12px}
+header.top h1{font-size:1.5rem;line-height:1.25;margin:0 0 6px;font-weight:600}
+.meta{font:14px/1.45 var(--sans);color:var(--muted);margin:0}
+nav.tabs{position:sticky;top:0;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+nav.tabs .wrap{display:flex;justify-content:space-between;gap:2px;overflow-x:auto;padding:0 10px}
+nav.tabs button{font:600 15px/1 var(--sans);color:var(--muted);background:none;border:0;border-bottom:3px solid transparent;padding:14px 6px 11px;cursor:pointer;white-space:nowrap}
+nav.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+main{padding:20px 18px 48px;outline:none;overflow-wrap:break-word}
+h2{font-size:1.3rem;line-height:1.3;margin:1.7em 0 .5em}
+h3{font-size:1.1rem;line-height:1.35;margin:1.5em 0 .4em}
+h4{font-size:1rem;margin:1.3em 0 .3em}
+main>:first-child,.doc>:first-child{margin-top:0}
+ul,ol{padding-left:1.35em}
+li{margin:.3em 0}
+a{color:var(--open);text-underline-offset:2px}
+code{font-size:.9em;background:var(--sheet);border:1px solid var(--rule);border-radius:4px;padding:0 .25em}
+pre{background:var(--sheet);border:1px solid var(--rule);border-radius:8px;padding:12px 14px;white-space:pre-wrap;word-break:break-word;font-size:14px;line-height:1.5}
+pre code{border:0;padding:0;background:none}
+blockquote{margin:1em 0;padding:.1em 0 .1em 14px;border-left:3px solid var(--rule);color:var(--muted)}
+hr{border:0;border-top:1px solid var(--rule);margin:1.6em 0}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;font:15px/1.4 var(--sans)}
+th,td{border-bottom:1px solid var(--rule);padding:8px 10px;text-align:left;vertical-align:top}
+.hero{margin:0 0 28px;padding:0 0 22px;border-bottom:1px solid var(--rule)}
+.hero h2{margin:0 0 .4em;font-size:1rem;font-family:var(--sans);color:var(--muted)}
+.hero p{font-size:1.28rem;line-height:1.5;margin:.5em 0}
+.hero p:first-of-type{font-size:1rem;font-family:var(--sans);color:var(--warn)}
+.tally{display:flex;flex-wrap:wrap;gap:6px 16px;font:14px/1.4 var(--sans);color:var(--muted);margin:14px 0 0;padding:0;list-style:none}
+.tally b{color:var(--ink);font-size:16px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:4px 0 20px}
+.chip{font:600 14px/1 var(--sans);border:1px solid var(--rule);background:var(--sheet);color:var(--ink);border-radius:999px;padding:9px 13px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.entry{border-left:4px solid var(--c,var(--open));padding:2px 0 2px 14px;margin:0 0 24px}
+.entry h3{margin:0 0 6px;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.state{font:600 13px/1 var(--sans);padding:5px 8px;border-radius:4px;color:var(--paper);background:var(--c,var(--open))}
+.s-ok{--c:var(--ok)}.s-warn{--c:var(--warn)}.s-bad{--c:var(--bad)}.s-muted{--c:var(--muted)}
+.entry dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:16px}
+.entry dt{font:600 13.5px/1.7 var(--sans);color:var(--muted)}
+.entry dd{margin:0;min-width:0;overflow-wrap:anywhere}
+details{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin:0 0 22px;padding:10px 0}
+summary{font:600 15px/1.4 var(--sans);cursor:pointer}
+.doclist{list-style:none;padding:0;margin:0}
+.doclist a{display:block;padding:12px 0;border-bottom:1px solid var(--rule);text-decoration:none;color:var(--ink)}
+.doclist small{display:block;font:14px/1.4 var(--sans);color:var(--muted)}
+.back{font:600 15px/1 var(--sans);background:none;border:0;color:var(--open);padding:6px 0 14px;cursor:pointer}
+.err{font:15px/1.5 var(--sans);border-left:4px solid var(--bad);padding:6px 12px}
+.err button{font:600 15px/1 var(--sans);margin-top:8px;padding:9px 13px;border-radius:6px;border:1px solid var(--rule);background:var(--sheet);color:var(--ink);cursor:pointer}
+.foot{font:14px/1.5 var(--sans);color:var(--muted);border-top:1px solid var(--rule);padding-top:14px;margin-top:32px}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><h1>Model vědomí: závěry a příspěvky</h1><p class="meta" id="meta">Načítám stav dohody…</p></div></header>
+<nav class="tabs" aria-label="Sekce"><div class="wrap" role="tablist">
+<button role="tab" data-tab="zavery">Závěry</button><button role="tab" data-tab="prispevky">Příspěvky</button><button role="tab" data-tab="dokumenty">Dokumenty</button><button role="tab" data-tab="historie">Historie</button>
+</div></nav>
+<main class="wrap" id="view" tabindex="-1"></main>
+<script>
+'use strict';
+const RAW = 'https://raw.githubusercontent.com/slunnnko/consciousness/main/';
+const REPO = 'https://github.com/slunnnko/consciousness';
+const DOCS = [['v3/ZAVERY.md','Závěry','Stav dohody a hlavní závěr'],['v3/README.md','Přehled','Co balík obsahuje a jak číst značky'],['v3/01-architektura.md','Architektura','9 vrstev a 3 principy s verdikty revize'],['v3/02-errata.md','Errata','Ověřené opravy faktů a body k ověření'],['v3/03-rozpory.md','Rozpory','Strukturální rozpory a navržené opravy'],['v3/04-rozhodnuti.md','Rozhodnutí','Co musí rozhodnout autor'],['v3/05-jadro-v3.2.md','Zpřesněné jádro','Návrh jádra v3.2 a mapa stavů'],['v3/06-kandidati-z-chatu.md','Kandidáti','Návrhy a kritiky po vydání v3.1'],['v3/07-mozek-a-rozhodovani.md','Proč máme mozek','Syntéza o původu mozku a rozhodování'],['v3/PRISPEVKY.md','Pravidla a záznam','Celý soubor příspěvků']];
+const ST = {'otevřené':'','podpořené':'s-ok','přijato':'s-ok','zapracováno':'s-ok','sporné':'s-warn','zamítnuto':'s-bad','neaktuální':'s-muted'};
+const FIELDS = ['Model','Čte verzi','Typ','Postoj','Cíl','Návrh','Důkazy','Jistota','Poznámka správce'];
+const cache = {};
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+async function load(path){
+  if(cache[path]) return cache[path];
+  for(const url of ['../' + path, RAW + path]){
+    try { const r = await fetch(url, {cache:'no-cache'}); if(r.ok){ cache[path] = await r.text(); return cache[path]; } } catch(e){}
+  }
+  throw new Error(path);
+}
+
+function link(txt, url){
+  const m = url.match(/^(?:\.\/)?((?:\d\d-[\w.-]+|README|PRISPEVKY|ZAVERY)\.md)(?:#([\w-]+))?$/);
+  if(m) return '<a href="#doc=v3/' + m[1] + (m[2] ? '@' + m[2] : '') + '">' + txt + '</a>';
+  if(/^https?:/.test(url)) return '<a href="' + url + '" rel="noopener">' + txt + '</a>';
+  if(/^\.\.\/README\.md$/.test(url)) return '<a href="' + REPO + '" rel="noopener">' + txt + '</a>';
+  return txt;
+}
+function inline(s){
+  let t = esc(s); const codes = [];
+  t = t.replace(/`([^`]+)`/g, (m, c) => { codes.push(c); return '\u0000' + (codes.length - 1) + '\u0000'; });
+  t = t.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (m, a, b) => link(a, b));
+  t = t.replace(/(^|[\s(])(https?:\/\/[^\s<)]*[^\s<).,;:])/g, (m, p, u) => p + '<a href="' + u + '" rel="noopener">' + u + '</a>');
+  t = t.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>').replace(/(^|[^*\w])\*([^*\s][^*]*?)\*/g, '$1<em>$2</em>');
+  return t.replace(/\u0000(\d+)\u0000/g, (m, i) => '<code>' + codes[i] + '</code>');
+}
+function list(lines, i){
+  const items = [];
+  while(i < lines.length){
+    const m = lines[i].match(/^(\s*)([-*]|\d+\.)\s+(.*)$/);
+    if(m){ items.push({ind:m[1].length, ord:/\d/.test(m[2]), text:m[3]}); i++; continue; }
+    if(items.length && /^\s{2,}\S/.test(lines[i])){ items[items.length - 1].text += ' ' + lines[i].trim(); i++; continue; }
+    break;
+  }
+  let h = ''; const st = [];
+  items.forEach(it => {
+    while(st.length && it.ind < st[st.length - 1].ind) h += '</li></' + st.pop().tag + '>';
+    if(!st.length || it.ind > st[st.length - 1].ind){ const tag = it.ord ? 'ol' : 'ul'; st.push({ind:it.ind, tag}); h += '<' + tag + '>'; }
+    else h += '</li>';
+    h += '<li>' + inline(it.text.replace(/^\[ \]\s*/, '☐ '));
+  });
+  while(st.length) h += '</li></' + st.pop().tag + '>';
+  return {h, i};
+}
+function table(rows){
+  const cells = r => r.replace(/^\||\|$/g, '').split('|').map(c => c.trim());
+  return '<div class="tbl"><table><thead><tr>' + cells(rows[0]).map(c => '<th>' + inline(c) + '</th>').join('') + '</tr></thead><tbody>' +
+    rows.slice(2).map(r => '<tr>' + cells(r).map(c => '<td>' + inline(c) + '</td>').join('') + '</tr>').join('') + '</tbody></table></div>';
+}
+function md(src){
+  const L = src.replace(/\r/g, '').split('\n'); const out = []; const para = []; let i = 0, m;
+  const flush = () => { if(para.length){ out.push('<p>' + inline(para.join(' ')) + '</p>'); para.length = 0; } };
+  while(i < L.length){
+    const l = L[i];
+    if(/^```/.test(l)){ flush(); const b = []; i++; while(i < L.length && !/^```/.test(L[i])) b.push(L[i++]); i++; out.push('<pre><code>' + esc(b.join('\n')) + '</code></pre>'); continue; }
+    if((m = l.match(/^<a id="([\w-]+)"><\/a>$/))){ flush(); out.push('<span id="a-' + m[1] + '"></span>'); i++; continue; }
+    if(/^\[← [^\]]*\]\([^)]*\)$/.test(l)){ i++; continue; }
+    if((m = l.match(/^(#{1,4})\s+(.*)$/))){ flush(); const n = Math.min(m[1].length + 1, 4); out.push('<h' + n + '>' + inline(m[2]) + '</h' + n + '>'); i++; continue; }
+    if(/^---\s*$/.test(l)){ flush(); out.push('<hr>'); i++; continue; }
+    if(/^>/.test(l)){ flush(); const b = []; while(i < L.length && /^>/.test(L[i])) b.push(L[i++].replace(/^>\s?/, '')); out.push('<blockquote>' + md(b.join('\n')) + '</blockquote>'); continue; }
+    if(/^\|/.test(l)){ flush(); const b = []; while(i < L.length && /^\|/.test(L[i])) b.push(L[i++]); out.push(table(b)); continue; }
+    if(/^\s*([-*]|\d+\.)\s+/.test(l)){ flush(); const r = list(L, i); out.push(r.h); i = r.i; continue; }
+    if(!l.trim()){ flush(); i++; continue; }
+    para.push(l.trim()); i++;
+  }
+  flush(); return out.join('\n');
+}
+function parseLog(src){
+  const [rules, log = ''] = src.split(/^## Záznam\s*$/m);
+  const entries = log.split(/^### /m).slice(1).map(b => {
+    const lines = b.split('\n'); const f = {};
+    lines.slice(1).forEach(l => { const m = l.match(/^- ([^:]+):\s*(.*)$/); if(m) f[m[1].trim()] = m[2]; });
+    const state = (f['Stav'] || 'otevřené').split(/[\s(]/)[0].toLowerCase();
+    return {id:lines[0].trim(), f, state};
+  });
+  return {rules, entries};
+}
+function counts(entries){ const c = {}; entries.forEach(e => c[e.state] = (c[e.state] || 0) + 1); return c; }
+
+async function vZavery(){
+  const [z, p] = await Promise.all([load('v3/ZAVERY.md'), load('v3/PRISPEVKY.md')]);
+  const parts = z.split(/^(?=## )/m); const hi = parts.findIndex(s => /^## Hlavní závěr/.test(s));
+  const c = counts(parseLog(p).entries);
+  const tally = '<ul class="tally">' + ['otevřené','podpořené','sporné','zapracováno','zamítnuto'].map(k => '<li><b>' + (c[k] || 0) + '</b> ' + k + '</li>').join('') + '</ul>';
+  const hero = hi >= 0 ? '<section class="hero">' + md(parts[hi]) + tally + '</section>' : tally;
+  const rest = parts.filter((s, k) => k !== hi && !/^# /.test(s)).join('');
+  const intro = parts[0] && /^# /.test(parts[0]) ? md(parts[0].replace(/^# .*\n/, '')) : '';
+  return hero + md(rest) + intro;
+}
+async function vPrispevky(filter){
+  const {rules, entries} = parseLog(await load('v3/PRISPEVKY.md'));
+  const c = counts(entries); const f = filter && c[filter] ? filter : '';
+  let h = '<details><summary>Pravidla dohody a formát odpovědi</summary>' + md(rules.replace(/^# .*\n/, '')) + '</details>';
+  h += '<div class="chips" role="group" aria-label="Filtr podle stavu"><button class="chip" data-f="" aria-pressed="' + !f + '">Vše ' + entries.length + '</button>' +
+    Object.keys(c).map(k => '<button class="chip" data-f="' + esc(k) + '" aria-pressed="' + (f === k) + '">' + esc(k) + ' ' + c[k] + '</button>').join('') + '</div>';
+  h += entries.slice().reverse().filter(e => !f || e.state === f).map(e => {
+    const keys = FIELDS.filter(k => e.f[k]).concat(Object.keys(e.f).filter(k => k !== 'Stav' && FIELDS.indexOf(k) < 0));
+    return '<article class="entry ' + (ST[e.state] || '') + '"><h3>' + esc(e.id) + ' <span class="state">' + esc(e.f['Stav'] || 'otevřené') + '</span></h3><dl>' +
+      keys.map(k => '<dt>' + esc(k) + '</dt><dd>' + inline(e.f[k]) + '</dd>').join('') + '</dl></article>';
+  }).join('');
+  return h;
+}
+function vDokumenty(){
+  return '<ul class="doclist">' + DOCS.map(d => '<li><a href="#doc=' + d[0] + '">' + esc(d[1]) + '<small>' + esc(d[2]) + '</small></a></li>').join('') + '</ul>';
+}
+async function vDoc(path){ return '<button class="back" data-back>Zpět na dokumenty</button><div class="doc">' + md(await load(path)) + '</div>'; }
+
+let filt = '';
+async function render(){
+  const hash = decodeURIComponent(location.hash.slice(1)) || 'zavery';
+  const [tab, arg] = hash.startsWith('doc=') ? ['dokumenty', hash.slice(4)] : [hash, ''];
+  document.querySelectorAll('nav.tabs button').forEach(b => b.setAttribute('aria-selected', b.dataset.tab === tab));
+  const view = $('#view');
+  try {
+    let h;
+    if(arg){ const [p, a] = arg.split('@'); h = await vDoc(p); view.innerHTML = h + foot(); if(a){ const t = document.getElementById('a-' + a); if(t){ t.scrollIntoView(); return; } } window.scrollTo(0, 0); return; }
+    if(tab === 'prispevky') h = await vPrispevky(filt);
+    else if(tab === 'dokumenty') h = vDokumenty();
+    else if(tab === 'historie') h = md(await load('CHANGELOG.md'));
+    else h = await vZavery();
+    view.innerHTML = h + foot();
+  } catch(e){
+    view.innerHTML = '<div class="err">Soubor ' + esc(e.message) + ' se nepodařilo načíst. Zkontroluj připojení a zkus to znovu.<br><button data-retry>Načíst znovu</button></div>';
+  }
+}
+function foot(){ return '<p class="foot">Stránka čte soubory přímo z repozitáře <a href="' + REPO + '" rel="noopener">slunnnko/consciousness</a> (větev main), takže po každém kole ukazuje aktuální stav.</p>'; }
+
+document.addEventListener('click', e => {
+  const t = e.target.closest('[data-tab],[data-f],[data-back],[data-retry]'); if(!t) return;
+  if(t.dataset.tab){ location.hash = t.dataset.tab; }
+  else if(t.hasAttribute('data-f')){ filt = t.dataset.f; render(); }
+  else if(t.hasAttribute('data-back')){ location.hash = 'dokumenty'; }
+  else { Object.keys(cache).forEach(k => delete cache[k]); render(); }
+});
+window.addEventListener('hashchange', () => { render(); $('#view').focus({preventScroll:true}); });
+load('v3/PRISPEVKY.md').then(p => {
+  const v = p.match(/\*\*Verze balíku:\*\*\s*([^\n]+)/);
+  $('#meta').textContent = 'Verze balíku ' + (v ? v[1].trim() : 'neznámá') + '. Načteno ' + new Date().toLocaleString('cs-CZ', {dateStyle:'short', timeStyle:'short'}) + '.';
+}).catch(() => { $('#meta').textContent = 'Stav dohody se nepodařilo načíst.'; });
+render();
+</script>
+</body>
+</html>

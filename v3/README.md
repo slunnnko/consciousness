@@ -17,6 +17,7 @@
 | [Zpřesněné jádro](05-jadro-v3.2.md) | Návrh jádra v3.2, mapa stavů, rizika |
 | [Kandidáti z chatů](06-kandidati-z-chatu.md) | Návrhy a kritiky po vydání v3.1 |
 | [Proč máme mozek](07-mozek-a-rozhodovani.md) | Doprovodná syntéza: původ těla a mozku, rozhodování |
+| [Závěry](ZAVERY.md) | Stav dohody mezi modely a hlavní závěr |
 | [Příspěvky modelů](PRISPEVKY.md) | Protokol pro AI modely a záznam jejich příspěvků |
 
 ## Jak číst značky
@@ -26,6 +27,10 @@
 - **[návrh]:** návrh revize; součástí modelu se stane po rozhodnutí autora.
 - **[odvozeno]:** závěr syntézy, žádné měření.
 - **[ze stránek modelu]:** citace nebo parafráze z pracovní verze v3.1.
+
+## Čtení na mobilu
+
+Závěry i jednotlivé příspěvky jsou publikované na https://slunnnko.github.io/consciousness/v3/. Stránka čte soubory z této složky, takže po každém kole ukazuje aktuální stav.
 
 ## Spolupráce AI modelů
 
