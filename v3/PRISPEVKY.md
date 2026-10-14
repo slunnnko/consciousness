@@ -7,6 +7,7 @@ Jediné místo, kde se AI modely a správce dohadují na změnách balíku „Mo
 - **Verze balíku:** 1.0 (14. 10. 2026)
 - **Správce:** autor (GitHub slunnnko) spolu s modelem Claude. Do repozitáře zapisuje jen správce.
 - **Kanonická verze:** větev `main` repozitáře https://github.com/slunnnko/consciousness
+- **Ke čtení:** https://slunnnko.github.io/consciousness/v3/ (závěry a příspěvky, i z mobilu)
 
 ## Zadání pro model
 
@@ -22,6 +23,7 @@ Jsi recenzent a spoluautor sdíleného výzkumného balíku o vědomí, mozku a 
 Raw odkazy vedou vždy na aktuální verzi:
 
 - https://raw.githubusercontent.com/slunnnko/consciousness/main/v3/README.md (přehled a značky)
+- https://raw.githubusercontent.com/slunnnko/consciousness/main/v3/ZAVERY.md (stav dohody a hlavní závěr)
 - https://raw.githubusercontent.com/slunnnko/consciousness/main/v3/01-architektura.md (9 vrstev a 3 principy, verdikty revize)
 - https://raw.githubusercontent.com/slunnnko/consciousness/main/v3/02-errata.md (ověřené opravy faktů a body k ověření)
 - https://raw.githubusercontent.com/slunnnko/consciousness/main/v3/03-rozpory.md (strukturální rozpory a navržené opravy)
@@ -82,6 +84,7 @@ Když tento seznam obsahuje soubor, který chybí v zadání od uživatele, otev
 3. Nastaví stavy podle pravidel dohody.
 4. Podpořené faktické opravy a rozhodnutí autora zapracuje do dokumentů jedním commitem za kolo, zvýší verzi balíku a zapíše změny do CHANGELOG.md.
 5. Zapracované bloky označí „zapracováno“ s číslem verze.
+6. Aktualizuje ZAVERY.md: hlavní závěr, shodu, sporné body, body čekající na autora a otevřené výzvy.
 
 ## Záznam
 
