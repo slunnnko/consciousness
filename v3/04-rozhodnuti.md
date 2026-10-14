@@ -64,6 +64,16 @@ Theory A, Theory B a přesně lokalizovaná mezera.
 
 *Zdůvodnění:* Tyto části revize podporuje nezávisle.
 
+## Jazyk reprezentací a radikální enaktivismus (P-0010)
+
+Hutto a Myin namítají, že pouhá kovariance stavů ani tok informace samy obsah nevytvářejí (těžký problém obsahu). Model v L1, P-CMPLX a P-VAL mluví o reprezentacích, aniž by vysvětlil, odkud se jejich obsah bere.
+
+- **a)** Absorbovat: L1–L3, P-CMPLX a P-VAL popsat jako řídicí dynamiku organismu v prostředí bez obsahu s pravdivostními podmínkami; obsah vzniká až s jazykem a sociálními praktikami (návrh P-0010, ve shodě s Hutto & Myin 2017). *(doporučeno)*
+- **b)** Teleosémantická obrana: odvodit obsah z evoluční historie přes vrstvu 0. Jde proti doporučenému zrušení vrstvy 0 jako vrstvy.
+- **c)** Ponechat jazyk reprezentací a námitku přiznat v §12 jako otevřený problém.
+
+*Zdůvodnění:* Varianta a mění jazyk modelu, ne jeho predikce, a nekoliduje s ostatními doporučeními. Riziko: velká část literatury o prediktivním zpracování mluví jazykem reprezentací, takže vazba na ni bude volnější.
+
 ## Úpravy z 11. 7. 2026
 
 Konsolidace sestavená z autorových odpovědí v chatu z 11. 7. 2026; do pracovní verze se zatím nepropsala.
@@ -71,5 +81,5 @@ Konsolidace sestavená z autorových odpovědí v chatu z 11. 7. 2026; do pracov
 1. P-CMPLX: oddělit tělo, které vysvětluje obsah, od nosiče sjednocení (otevřené: koherence neurálního pole, metastabilita).
 2. Vrstva 0: divergenční test jako brána, jinak zrušit; záchrana přes Kepplerovo pole nulového bodu zamítnuta.
 3. P-VAL: model funkcionálně agnostický; autorův realistický sklon přiznaný v §12.3 jako možné zkreslení a nepoužitý jako evidence.
-4. §13: Keppler (ZPF, TRAZE) jako steelmanovaný soupeř; McFadden (CEMI) jako kandidát na nosič sjednocení.
+4. §13: Keppler (ZPF, TRAZE) jako steelmanovaný soupeř; McFadden (CEMI) jako kandidát na nosiče sjednocení.
 5. P-MODE5: hloubka a udržitelnost nedvojného stavu klesá s velikostí akutní tělesné potřeby (žízeň, hlad, bolest, plný močový měchýř), a to rychleji než při vnějším rozptýlení stejné intenzity. Fenomenologická kotva: Leder 1990, The Absent Body. Hypotéza, T3.
