@@ -195,7 +195,7 @@ Místa, kde si model protiřečí sám se sebou nebo kde jedna kategorie slučuj
 **Co přesně nesedí** [ze stránek modelu]
 
 - Vrstva 2: „poruchy precision na anticipační signály“.
-- Vrstva 6: dopaminový signál říká „pusť zdroje“, ale mozek mu „nvěří“.
+- Vrstva 6: dopaminový signál říká „pusť zdroje“, ale mozek mu „nevěří“.
 - Revize v3.1 (1f): zvýšená cena úsilí při neporušené predikční chybě („RPE intaktní“). Doložené to není: metaanalýzy ukazují u ADHD slabší odpověď ventrálního striata při očekávání odměny.
 - Vrstva 7: „chronický dluh, nikdy nedoplacený“ a „ochrana rozpočtu“.
 
