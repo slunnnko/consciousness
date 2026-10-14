@@ -117,7 +117,7 @@ Ověřeno webovým vyhledáváním 14. 10. 2026. Formát: co v modelu stojí, ov
 *Kde:* Vrstva 4, vrstva 8, P-CMPLX
 
 - **V modelu stojí:** Cessation v Módu 3 a v tabulce vrstvy 8 s hypotézou „≥ 0.50 sustained“
-- **Ověřený stav:** Chowdhury a kol. 2023: jeden adept, 37 epizod, pokles alfa vln asi 40 s před nástupem a minimum hned po. Van Lutterveld a kol. 2024: propojenost sítí beze změny. Shinozuka & Sacchet 2025 (poster, nerecenzovaný): u tří meditlujících v nirodha samāpatti se spontánní složitost signálu nelišila od běžných úloh.
+- **Ověřený stav:** Chowdhury a kol. 2023: jeden adept, 37 epizod, pokles alfa vln asi 40 s před nástupem a minimum hned po. Van Lutterveld a kol. 2024: propojenost sítí beze změny. Shinozuka & Sacchet 2025 (poster, nerecenzovaný): u tří meditujících v nirodha samāpatti se spontánní složitost signálu nelišila od běžných úloh.
 - **Co to mění:** Data jsou zatím od jednoho až tří lidí a PCI během cessation nikdo nezměřil. Predikce 2b je tak otevřená a patří k nejcennějším testům modelu.
 
 **Zdroje**
