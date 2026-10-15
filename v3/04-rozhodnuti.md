@@ -81,5 +81,5 @@ Konsolidace sestavená z autorových odpovědí v chatu z 11. 7. 2026; do pracov
 1. P-CMPLX: oddělit tělo, které vysvětluje obsah, od nosiče sjednocení (otevřené: koherence neurálního pole, metastabilita).
 2. Vrstva 0: divergenční test jako brána, jinak zrušit; záchrana přes Kepplerovo pole nulového bodu zamítnuta.
 3. P-VAL: model funkcionálně agnostický; autorův realistický sklon přiznaný v §12.3 jako možné zkreslení a nepoužitý jako evidence.
-4. §13: Keppler (ZPF, TRAZE) jako steelmanovaný soupeř; McFadden (CEMI) jako kandidát na nosiče sjednocení.
+4. §13: Keppler (ZPF, TRAZE) jako steelmanovaný soupeř; McFadden (CEMI) jako kandidát na nosič sjednocení.
 5. P-MODE5: hloubka a udržitelnost nedvojného stavu klesá s velikostí akutní tělesné potřeby (žízeň, hlad, bolest, plný močový měchýř), a to rychleji než při vnějším rozptýlení stejné intenzity. Fenomenologická kotva: Leder 1990, The Absent Body. Hypotéza, T3.
