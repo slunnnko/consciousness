@@ -4,7 +4,7 @@
 
 Nejpravděpodobnější model fungování mozku a rozhodování podle výzkumu k 14. 10. 2026. Syntézu sestavil Claude (Anthropic) jako doprovodný text k Modelu vědomí v3.x; na konci s ním srovnává.
 
-Verze dokumentu 1.0 (14. 10. 2026).
+Verze dokumentu 1.1 (14. 10. 2026).
 
 ## Jak číst značky
 
@@ -35,8 +35,8 @@ Verze dokumentu 1.0 (14. 10. 2026).
 2. Nervová soustava nejspíš vznikla, aby se velké tělo dokázalo hýbat jako celek: koordinovala stahy svalů po celém těle. (T2) [ověřeno]
 3. Mozek přidal dvě schopnosti: předvídat potřeby těla dřív, než nastanou (allostáza), a z mnoha možných akcí vybrat jednu. (T2) [k ověření]
 4. Lidský mozek je prediktivní regulátor těla ve fyzickém i sociálním světě. Myšlení, plánování a řeč rozšiřují stejnou smyčku dál do budoucnosti a mezi lidi. (T2) [odvozeno]
-5. Rozhodování se řídí očekávanou hodnotou možností pro tělo a cíle, od které se odečítá cena: úsilí, čekání, riziko. Hodnoty se učí z predikčních chyb odměny. (T1–T2) [k ověření]
-6. Rozhodnutí nevychází z jednoho místa: možnosti soupeří a rozhodovací signály jsou rozprostřené po celém mozku. (T1 u myši) [ověřeno]
+5. Rozhodování se řídí očekávanou hodnotou možností pro tělo a cíle, od které se odečítá cena: úsilí, čekání, riziko. Hodnoty se učí z predikčních chyb odměny. (T1–T2) [ověřeno]
+6. Rozhodnutí nevychází z jednoho místa: možnosti soupeří a rozhodovací signály jsou rozprostřené po celém mozku. (T1 u myši, T2 u člověka) [ověřeno]
 7. Tělo vstupuje do rozhodnutí přímo: například dobrovolné pohyby lidé spouštějí častěji při výdechu. (T2) [ověřeno]
 8. Vědomé „rozhodl jsem se“ je pozdní a zčásti zpětně složená zpráva. U uvážených rozhodnutí vypadá mozková příprava jinak než u nahodilých a vědomé zvažování se na nich nejspíš podílí. (T2–T3) [k ověření]
 
@@ -70,7 +70,7 @@ Pohybující se tělo naráží na dva problémy, které rozptýlená nervová s
 - [ověřeno] U lidí existuje rozsáhlý mozkový systém, který propojuje vnímání vnitřku těla (interocepci) s jeho řízením (allostázou). (Kleckner a kol. 2017, https://doi.org/10.1038/s41562-017-0069)
 - [ověřeno] Paul Cisek navrhuje vysvětlovat mozek podle pořadí, v jakém se v evoluci vyvíjel: od jednoduchých smyček řízení chování ke složitým. (Cisek 2019, https://doi.org/10.3758/s13414-019-01760-1)
 - [ověřeno] Možné akce spolu v mozku soutěží a informace o situaci a hodnotě soutěž vychylují, dokud nezbude jedna (soutěž afordancí). (Cisek 2007, https://pmc.ncbi.nlm.nih.gov/articles/PMC2440773)
-- [k ověření] Bazální ganglia se popisují jako obratlovčí řešení problému výběru jedné akce (Redgrave, Prescott & Gurney 1999).
+- [ověřeno] Bazální ganglia se popisují jako obratlovčí řešení problému výběru jedné akce. (Redgrave, Prescott & Gurney 1999, https://doi.org/10.1016/S0306-4522(98)00319-4)
 - [k ověření] Larva sumky plave a má jednoduchý mozek; po přisednutí na kámen větší část nervové soustavy vstřebá. Známá ilustrace, že mozek slouží pohybu.
 - [k ověření] Část oboru považuje tvrzení „allostáza je hlavní funkce mozku“ za příliš silné.
 
@@ -110,18 +110,18 @@ Co z toho plyne [odvozeno]: Rozhodnutí se v mozku nepřipravuje odděleně od p
 
 Dopaminové neurony hlásí, když něco dopadne líp nebo hůř, než se čekalo, a mozek podle toho upraví, co příště čekat (predikční chyba odměny). Pomalejší hladina dopaminu ovlivňuje, kolik úsilí se vyplatí vložit (tonický dopamin).
 
-- [k ověření] Dopamin a predikční chyba odměny (Schultz, Dayan & Montague 1997).
-- [k ověření] Tonický dopamin a ochota k úsilí (Niv a kol. 2007; Westbrook a kol. 2020).
+- [ověřeno] Fázický dopamin nese predikční chybu odměny. (Schultz, Dayan & Montague 1997, https://doi.org/10.1126/science.275.5306.1593)
+- [ověřeno] Tonický dopamin souvisí s tím, kolik úsilí organismus vynakládá a jak mozek váží přínos práce proti její ceně. (Niv a kol. 2007, https://doi.org/10.1007/s00213-006-0502-4; Westbrook a kol. 2020, https://doi.org/10.1126/science.aaz5891)
 
 Co z toho plyne [odvozeno]: Hodnoty nejsou dané napevno: přepisuje je zkušenost i stav těla.
 
-### Pracuje rozprostřeně (T1 u myši)
+### Pracuje rozprostřeně (T1 u myši, T2 u člověka)
 
 Neexistuje jedno místo, kde by se rozhodovalo. Když myši v pokusu volily stranu, signály volby se objevily v mnoha oblastech napříč mozkem a aktivita spojená s nadcházejícím pohybem skoro všude.
 
 - [ověřeno] Záznam z 621 733 neuronů ve 279 oblastech mozku 139 myší z 12 laboratoří: reprezentace podnětu se objevila ve zrakových oblastech a přešla v narůstající aktivitu ve středním a zadním mozku, která kódovala i volbu; odezvy na odměnu byly rozšířené. (IBL 2025a, https://doi.org/10.1038/s41586-025-09235-0)
 - [ověřeno] Předchozí očekávání je zakódované v mnoha oblastech napříč mozkem. (IBL 2025b, https://doi.org/10.1038/s41586-025-09226-1)
-- [k ověření] Jde o myši v jedné úloze; přenos na člověka je k ověření.
+- [ověřeno] U lidí ukazuje intrakraniální EEG rozprostřenou síť oblastí, jejichž aktivita má znaky akumulace důkazů nezávisle na tom, jakým pohybem člověk odpoví; měřeno u pacientů s epilepsií v úloze se směrem pohybu teček. (Gherman a kol. 2024, https://doi.org/10.1038/s41562-024-01824-9)
 
 Co z toho plyne [odvozeno]: „Já, které rozhoduje“ nemá v mozku jedno místo. Je to souhra mnoha oblastí.
 
@@ -142,10 +142,10 @@ Většina regulace těla a mnoho rozhodnutí běží bez vědomí. Nejlépe podl
 
 ### Čím se řídí
 
-- [k ověření] **Hodnota podle stavu těla.** Jídlo chutná víc, když máš hlad, a teplo je příjemnější, když je ti zima. Stejná věc má jinou hodnotu podle toho, co tělo právě potřebuje (alliestezie, Cabanac 1971).
-- [k ověření] **Cena.** Úsilí, čekání a riziko hodnotu snižují (diskontování). Jestli se námaha vyplatí, odhaduje mimo jiné přední cingulární kůra (Shenhav, Botvinick & Cohen 2013).
+- [ověřeno] **Hodnota podle stavu těla.** Jídlo chutná víc, když máš hlad, a teplo je příjemnější, když je ti zima. Stejná věc má jinou hodnotu podle toho, co tělo právě potřebuje (alliestezie, Cabanac 1971, https://doi.org/10.1126/science.173.4002.1103).
+- [ověřeno] **Cena.** Úsilí, čekání a riziko hodnotu snižují (diskontování). Jestli se námaha vyplatí, odhaduje mimo jiné přední cingulární kůra (Shenhav, Botvinick & Cohen 2013, https://doi.org/10.1016/j.neuron.2013.07.007).
 - [k ověření] **Naučené hodnoty.** Predikční chyby odměny průběžně přepisují, co od čeho čekat. Hodnoty různých věcí se převádějí na společnou měnu (ventromediální prefrontální kůra).
-- [k ověření] **Tři hodnotící systémy.** Pavlovovský (přiblížit se, nebo uniknout; rychlý a vrozený), návykový (co se dřív vyplatilo; rychlý a levný) a cílený (co se stane, když…; pomalý a pružný). Vítězí ten, kterému mozek v dané situaci víc věří (Rangel, Camerer & Montague 2008; Daw, Niv & Dayan 2005).
+- [ověřeno] **Tři hodnotící systémy.** Pavlovovský (přiblížit se, nebo uniknout; rychlý a vrozený), návykový (co se dřív vyplatilo; rychlý a levný) a cílený (co se stane, když…; pomalý a pružný). Vítězí ten, kterému mozek v dané situaci víc věří (Rangel, Camerer & Montague 2008, https://doi.org/10.1038/nrn2357; Daw, Niv & Dayan 2005, https://doi.org/10.1038/nn1560).
 - [k ověření] **Nejistota a zvědavost.** Informace má hodnotu sama o sobě. Proto zkoušíme nové věci, i když známá volba je jistější.
 - [k ověření] **Druzí lidé.** Uznání, sounáležitost a pověst vstupují do hodnoty podobně jako jiné odměny.
 - [odvozeno] **Evoluce.** Nerozhoduje přímo. Nastavila, co se cítí jako hodnota: hlad, strach, péči o druhé, zvědavost (ultimátní vysvětlení).
@@ -157,9 +157,9 @@ Ilustrační model, čísla nepocházejí z měření. Tři možnosti (najíst s
 ### Odkud vychází
 
 - [ověřeno] **Z celého mozku.** V mapě International Brain Laboratory se signály volby objevily v mnoha oblastech a aktivita spojená s nadcházejícím pohybem téměř všude. Předchozí očekávání bylo zakódované napříč mozkem. (IBL 2025a, https://doi.org/10.1038/s41586-025-09235-0; IBL 2025b, https://doi.org/10.1038/s41586-025-09226-1)
-- [ověřeno] **Z těla.** Lidé spouštějí dobrovolné pohyby častěji při výdechu. U pohybů na vnější pokyn tato vazba chybí a velikost přípravného potenciálu se mění podle fáze dechu. (Park a kol. 2020, https://doi.org/10.1038/s41467-019-13967-9)
+- [ověřeno] **Z těla.** Lidé spouštějí dobrovolné pohyby častěji při výdechu. U pohybů na vnější pokyn tato vazba chybí a velikost přípravného potenciálu se mění podle fáze dechu (Park a kol. 2020, https://doi.org/10.1038/s41467-019-13967-9). Nádech zrychluje rozhodování o směru pohybu teček i o výrazu tváře a v modelu akumulace důkazů snižuje rozhodovací práh (Brændholt a kol. 2025, https://doi.org/10.1371/journal.pcbi.1013086).
 - [ověřeno] **Z plánování celého těla.** Síť, která v motorické kůře plánuje pohyb celého těla, je napojená na řízení fyziologie a vzrušení. (Gordon a kol. 2023, https://doi.org/10.1038/s41586-023-05964-2)
-- [k ověření] **Vědomé „rozhodl jsem se“.** Libet naměřil přípravnou aktivitu dřív, než lidé hlásili záměr. U libovolných voleb ji zčásti vysvětluje nahodilé kolísání aktivity (Schurger a kol. 2012), u uvážených rozhodnutí chybí (Maoz a kol. 2019). Lidé navíc ochotně obhajují volbu, kterou neudělali (slepota k volbě, Johansson a kol. 2005).
+- [k ověření] **Vědomé „rozhodl jsem se“.** Libet naměřil přípravnou aktivitu dřív, než lidé hlásili záměr. U libovolných voleb ji zčásti vysvětluje nahodilé kolísání aktivity (Schurger a kol. 2012, https://doi.org/10.1073/pnas.1210467109), u uvážených rozhodnutí chybí (Maoz a kol. 2019, https://doi.org/10.7554/eLife.39787). Lidé navíc ochotně obhajují volbu, kterou neudělali (slepota k volbě, Johansson a kol. 2005, https://doi.org/10.1126/science.1111709). Libet 1983 zůstává k ověření.
 
 Odpověď [odvozeno]: Rozhodnutí vychází ze soutěže možností rozprostřené po celém mozku. Soutěž vychyluje předpovězená hodnota pro tělo a cíle a okamžitý stav těla. Vědomí se do ní zapojuje hlavně u pomalých, nových a uvážených rozhodnutí a pak při jejich vysvětlování.
 
@@ -238,9 +238,9 @@ Verdikt [odvozeno]: Model v3.x došel ke stejné páteři, ke které míří sou
 
 - **Afordance**: Možnost jednání, kterou nabízí situace. Hrnek „nabízí“ uchopení, schod „nabízí“ výstup. Podle Paula Ciska mozek zakóduje několik afordancí naráz a nechá je soutěžit.
 - **Akumulace důkazů**: Rozhodnutí padne, když nasbíraná evidence přesáhne práh. Každá možnost sbírá „hlasy“ z vnímání a z hodnot; ta, která první přesáhne práh, vyhraje. Model dobře popisuje rychlost a chybovost voleb (k ověření: Gold & Shadlen 2007).
-- **Alliestezie**: Stejný podnět je příjemný podle toho, co tělo potřebuje. Teplá voda je příjemná, když je ti zima, a nepříjemná, když je ti horko (k ověření: Cabanac 1971).
+- **Alliestezie**: Stejný podnět je příjemný podle toho, co tělo potřebuje. Teplá voda je příjemná, když je ti zima, a nepříjemná, když je ti horko (Cabanac 1971).
 - **Allostáza**: Řízení těla s předstihem. Mozek chystá tělo na to, co přijde: zvedne krevní tlak před vstáním a cukr před výkonem. Homeostáza reaguje až na odchylku, allostáza ji předvídá.
-- **Bazální ganglia**: Jádra hluboko v mozku, která pomáhají vybrat jednu akci. Fungují jako brána: jednu akci pustí a ostatní tlumí. Popisují se jako obratlovčí řešení problému výběru (k ověření: Redgrave a kol. 1999). Úzce spolupracují s dopaminem.
+- **Bazální ganglia**: Jádra hluboko v mozku, která pomáhají vybrat jednu akci. Fungují jako brána: jednu akci pustí a ostatní tlumí. Popisují se jako obratlovčí řešení problému výběru (Redgrave a kol. 1999). Úzce spolupracují s dopaminem.
 - **Diskontování**: Odměna později má menší hodnotu než odměna hned. Čím delší čekání, tím menší hodnota. Podobně hodnotu snižují úsilí a riziko.
 - **Fázický a tonický dopamin**: Krátké záblesky učí, pomalá hladina řídí ochotu k úsilí. Fázická složka nese predikční chybu odměny, tonická souvisí s tím, kolik energie se v dané situaci vyplatí vložit.
 - **Globální pracovní prostor**: Vědomé je to, co se „rozhlásí“ do celého mozku. Teorie Stanislase Dehaena: informace se stane vědomou, když je současně dostupná řeči, paměti a plánování. Vyplácí se v nových a sporných situacích.
@@ -257,11 +257,11 @@ Verdikt [odvozeno]: Model v3.x došel ke stejné páteři, ke které míří sou
 - **Prekérnost**: Systém zanikne, pokud si sám neudrží své proměnné. Živý organismus musí neustále hlídat energii, teplotu a celistvost. Z toho plyne nejzákladnější motivace: udržet se.
 - **Princip volné energie (FEP)**: Rámec Karla Fristona: systémy, které přetrvávají, minimalizují překvapení. Matematický popis toho, jak se trvající systém chová vzhledem ke svému modelu světa. V roce 2023 jeho kvantitativní předpovědi sedly na kultury krysích neuronů. Jaké cíle organismus má, FEP sám neurčuje; ty nastavila evoluce.
 - **Proximátní a ultimátní vysvětlení**: Jak něco funguje teď, a proč to evoluce vytvořila. Hlad má proximátní příčinu (klesl cukr) i ultimátní (předkové bez hladu nepřežili). Obě odpovědi platí současně.
-- **Přední cingulární kůra**: Oblast, která váží, jestli se vyplatí námaha. Sleduje konflikty a chyby a odhaduje, kolik kontroly a úsilí se vyplatí vložit (k ověření: Shenhav a kol. 2013).
-- **Přípravný potenciál**: Pomalé narůstání mozkové aktivity před vlastním pohybem. Předchází pohybům, které člověk spustí sám, zhruba o sekundu. Libet ho naměřil dřív, než lidé hlásili záměr. Novější výklad: zčásti jde o nahodilé kolísání aktivity, které u libovolných voleb přesáhne práh (k ověření: Schurger a kol. 2012).
+- **Přední cingulární kůra**: Oblast, která váží, jestli se vyplatí námaha. Sleduje konflikty a chyby a odhaduje, kolik kontroly a úsilí se vyplatí vložit (Shenhav a kol. 2013).
+- **Přípravný potenciál**: Pomalé narůstání mozkové aktivity před vlastním pohybem. Předchází pohybům, které člověk spustí sám, zhruba o sekundu. Libet ho naměřil dřív, než lidé hlásili záměr. Novější výklad: zčásti jde o nahodilé kolísání aktivity, které u libovolných voleb přesáhne práh (Schurger a kol. 2012).
 - **SCAN (somato-kognitivní akční síť)**: Síť v motorické kůře pro plánování pohybu celého těla. Popsaná v roce 2023. Střídá se s oblastmi pro ruce, nohy a obličej a je napojená na síť pro jednání, vzrušení, bolest a řízení fyziologie.
 - **Skin brain teze**: První nervové soustavy vznikly pro koordinaci svalů po celém těle. Keijzer, van Duijn a Lyon (2013): nervy nejdřív sjednotily stahy svalů pod kůží, aby se velké tělo mohlo hýbat jako celek.
-- **Slepota k volbě**: Lidé obhajují volbu, kterou ve skutečnosti neudělali. V pokusu Johanssona a kolegů (2005) lidé často nepoznali, že jim experimentátor podstrčil fotografii, kterou nevybrali, a vysvětlovali, proč si ji vybrali (k ověření).
+- **Slepota k volbě**: Lidé obhajují volbu, kterou ve skutečnosti neudělali. V pokusu Johanssona a kolegů (2005) lidé často nepoznali, že jim experimentátor podstrčil fotografii, kterou nevybrali, a vysvětlovali, proč si ji vybrali.
 - **Soutěž afordancí**: Možné akce soupeří, dokud jedna nevyhraje. Hypotéza Paula Ciska (2007): mozek připravuje více možných akcí současně a informace o hodnotě a situaci soutěž postupně vychylují, až zbude jedna.
 - **Tier (T1, T2, T3)**: Stupeň jistoty. T1: silná empirická opora a konsenzus. T2: věrohodné a podložené, bez konsenzu. T3: spekulace. Stejné definice jako v Modelu vědomí v3.x.
 - **Ventromediální prefrontální kůra**: Oblast za čelem, která porovnává hodnoty možností. Spolu s orbitofrontální kůrou převádí různé věci na společnou „měnu“, aby šly porovnat (k ověření).
@@ -285,28 +285,32 @@ Verdikt [odvozeno]: Model v3.x došel ke stejné páteři, ke které míří sou
 - International Brain Laboratory a kol. (2025): A brain-wide map of neural activity during complex behaviour. Nature. https://doi.org/10.1038/s41586-025-09235-0
 - Findling, Hubert a kol. (2025): Brain-wide representations of prior information in mouse decision-making. Nature. https://doi.org/10.1038/s41586-025-09226-1
 - Park a kol. (2020): Breathing is coupled with voluntary action and the cortical readiness potential. Nature Communications 11, 289. https://doi.org/10.1038/s41467-019-13967-9
+- Cabanac (1971): Physiological role of pleasure. Science 173(4002), 1103–1107. https://doi.org/10.1126/science.173.4002.1103
+- Daw, Niv & Dayan (2005): Uncertainty-based competition between prefrontal and dorsolateral striatal systems for behavioral control. Nature Neuroscience 8(12), 1704–1711. https://doi.org/10.1038/nn1560
+- Johansson, Hall, Sikström & Olsson (2005): Failure to detect mismatches between intention and outcome in a simple decision task. Science 310(5745), 116–119. https://doi.org/10.1126/science.1111709
+- Maoz a kol. (2019): Neural precursors of decisions that matter: an ERP study of deliberate and arbitrary choice. eLife 8, e39787. https://doi.org/10.7554/eLife.39787
+- Niv a kol. (2007): Tonic dopamine: opportunity costs and the control of response vigor. Psychopharmacology 191(3), 507–520. https://doi.org/10.1007/s00213-006-0502-4
+- Rangel, Camerer & Montague (2008): A framework for studying the neurobiology of value-based decision making. Nature Reviews Neuroscience 9(7), 545–556. https://doi.org/10.1038/nrn2357
+- Redgrave, Prescott & Gurney (1999): The basal ganglia: a vertebrate solution to the selection problem? Neuroscience 89(4), 1009–1023. https://doi.org/10.1016/S0306-4522(98)00319-4
+- Schultz, Dayan & Montague (1997): A neural substrate of prediction and reward. Science 275(5306), 1593–1599. https://doi.org/10.1126/science.275.5306.1593
+- Schurger, Sitt & Dehaene (2012): An accumulator model for spontaneous neural activity prior to self-initiated movement. PNAS 109(42). https://doi.org/10.1073/pnas.1210467109
+- Shenhav, Botvinick & Cohen (2013): The expected value of control: an integrative theory of anterior cingulate cortex function. Neuron 79(2), 217–240. https://doi.org/10.1016/j.neuron.2013.07.007
+- Westbrook a kol. (2020): Dopamine promotes cognitive effort by biasing the benefits versus costs of cognitive work. Science 367(6484), 1362–1366. https://doi.org/10.1126/science.aaz5891
+- Gherman a kol. (2024): Intracranial electroencephalography reveals effector-independent evidence accumulation dynamics in multiple human brain regions. Nature Human Behaviour 8(4), 758–770. https://doi.org/10.1038/s41562-024-01824-9
+- Brændholt a kol. (2025): The respiratory cycle modulates distinct dynamics of affective and perceptual decision-making. PLOS Computational Biology 21(5), e1013086. https://doi.org/10.1371/journal.pcbi.1013086
+
+Zdroje od Cabanac (1971) po Brændholt a kol. (2025) přibyly v kole 1 (verze 1.1) z příspěvků P-0008 a P-0009; správce ověřil jejich záznamy v registru Crossref, u prací Gherman a kol. a Brændholt a kol. i abstrakty.
 
 ### K ověření (z obecné znalosti, bez dohledaného odkazu)
 
-- Cabanac 1971, Science: fyziologická role libosti (alliestezie).
-- Daw, Niv & Dayan 2005, Nature Neuroscience: soupeření návykového a cíleného systému.
 - Dehaene 2014, Consciousness and the Brain: teorie globálního pracovního prostoru.
 - Gold & Shadlen 2007, Annual Review of Neuroscience: akumulace důkazů při rozhodování.
 - Jékely, Keijzer & Godfrey-Smith 2015, Phil Trans R Soc B: možnosti rané evoluce nervových soustav.
-- Johansson a kol. 2005, Science: slepota k volbě.
 - Levin 2019, Frontiers in Psychology: výpočetní hranice „já“.
 - Libet a kol. 1983, Brain: přípravný potenciál a vědomý záměr.
 - Lyon 2015, Frontiers in Microbiology: kognitivní buňka.
-- Maoz a kol. 2019, eLife: přípravný potenciál u uvážených a nahodilých rozhodnutí.
-- Niv a kol. 2007, Psychopharmacology: tonický dopamin a vigor.
-- Rangel, Camerer & Montague 2008, Nature Reviews Neuroscience: rámec pro hodnotové rozhodování.
-- Redgrave, Prescott & Gurney 1999, Neuroscience: bazální ganglia a problém výběru.
-- Schultz, Dayan & Montague 1997, Science: dopamin a predikční chyba.
-- Schurger, Sitt & Dehaene 2012, PNAS: akumulátorový model přípravného potenciálu.
 - Schultz a kol. 2023, Nature: žebernatky jako sesterská skupina ostatních živočichů.
-- Shenhav, Botvinick & Cohen 2013, Neuron: očekávaná hodnota kontroly.
 - Sterling 2012, Physiology & Behavior: allostáza jako prediktivní regulace.
 - Sterling & Laughlin 2015, MIT Press: Principles of Neural Design.
 - Usher & McClelland 2001, Psychological Review: soutěžící akumulátory.
-- Westbrook a kol. 2020, Science: dopamin a ochota ke kognitivnímu úsilí.
 - Wood & Rünger 2016, Annual Review of Psychology: psychologie návyků.

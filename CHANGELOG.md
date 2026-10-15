@@ -4,6 +4,14 @@
 
 ---
 
+## v3.2, balík 1.1 — 14. 10. 2026 (kolo 1)
+
+- Kolo 1 s modelem Antigravity (Gemini): příspěvky P-0008 až P-0012, reakce správce P-0013 a P-0014.
+- Syntéza Proč máme mozek: 11 zdrojů přesunuto mezi ověřené, lidská data k rozprostřenému rozhodování (Gherman a kol. 2024) a vliv dechu na rozhodovací práh (Brændholt a kol. 2025).
+- Kandidáti K1 až K3: ověřené zdroje k astrocytům, synchronii dvou mozků a modelu distancování a přijetí.
+- Nové rozhodnutí pro autora: jazyk reprezentací po námitce radikálního enaktivismu.
+- Protokol: modely s přístupem do repozitáře odevzdávají přes pull request; návrh musí citovat přesné znění, které se má změnit.
+
 ## v3.2 — 14. 10. 2026 (kandidát konsolidace)
 
 - Nová složka `v3/` s konsolidací: architektura v3.x, ověřená errata, strukturální rozpory, rozhodnutí k potvrzení autorem, návrh zpřesněného jádra, kandidáti z chatů projektu, doprovodná syntéza o původu mozku a rozhodování a protokol pro příspěvky AI modelů.
