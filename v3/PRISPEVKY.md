@@ -232,3 +232,48 @@ Když tento seznam obsahuje soubor, který chybí v zadání od uživatele, otev
 - Důkazy: [ověřeno] záznamy v registru Crossref a abstrakty v Europe PMC: https://doi.org/10.1038/s41586-024-08170-w, https://doi.org/10.1523/JNEUROSCI.4707-08.2009, https://doi.org/10.1016/j.celrep.2022.111426, https://doi.org/10.1093/scan/nsw172, https://doi.org/10.1017/S0140525X17000309
 - Stav: zapracováno (verze 1.1)
 - Poznámka správce: Návrh modelu Claude s podporou autora ze 14. 10. 2026. Zdroje dodal model Antigravity v P-0012.
+
+### P-NEW
+- Model: Claude Opus 5.5 (Anthropic), 16. 10. 2026
+- Čte verzi: 1.1 (14. 10. 2026)
+- Typ: oprava
+- Cíl: v3/07-mozek-a-rozhodovani.md, sekce `### Odkud vychází`, odrážka **Z těla**
+- Návrh: Nahradit `U pohybů na vnější pokyn tato vazba chybí a velikost přípravného potenciálu se mění podle fáze dechu (Park a kol. 2020, https://doi.org/10.1038/s41467-019-13967-9).` zněním `U pohybů na vnější pokyn tato vazba chybí (Park a kol. 2020, https://doi.org/10.1038/s41467-019-13967-9). Že se podle fáze dechu mění i velikost přípravného potenciálu, je sporné: nová analýza týchž dat ji vysvětluje confoundem, protože amplituda přípravného potenciálu i fáze dechu jsou obě navázané na začátek pohybu (Jeay-Bizot a kol. 2026, https://doi.org/10.1371/journal.pbio.3003982).`
+- Důkazy: [ověřeno] Jeay-Bizot, Chishti, Maoz & Schurger 2026, PLOS Biology 24(9), e3003982, https://doi.org/10.1371/journal.pbio.3003982. Abstrakt v Europe PMC: vazba vzniká z confoundu a stejný falešný efekt vychází i v simulovaných datech. Článek na stránce PLOS: lidé mačkali tlačítko častěji při výdechu, první věta odrážky tedy platí dál. [k ověření] Sandoval, Suh, Lee & Park 2026, preprint bioRxiv „The respiratory phase causally modulates the readiness potential amplitude“; znám jen název, proto „sporné“, ne „vyvráceno“. Podnět: podcast DEEP TALKS #227, viz `zdroje/2026-10-12-deep-talks-227/srovnani-s-v3.md`.
+- Jistota: T2
+
+### P-NEW
+- Model: Claude Opus 5.5 (Anthropic), 16. 10. 2026
+- Čte verzi: 1.1 (14. 10. 2026)
+- Typ: doplnění
+- Cíl: v3/05-jadro-v3.2.md, sekce `## Mapa stavů`, řádek **Narkóza (propofol)**
+- Návrh: Nahradit `navrženo: Pod prahem PCI. [k ověření] Casali a kol. 2013.` zněním `navrženo: Pod prahem PCI; prožitek přesto možný: po probuzení ze sedace lidé často hlásí sny, které měřítka složitosti od prázdna nerozliší. [k ověření] Casali a kol. 2013. [ověřeno] Bajwa a kol. 2025.`
+- Důkazy: [ověřeno] Bajwa a kol. 2025, Scientific Reports 15, 32746, https://doi.org/10.1038/s41598-025-12695-z. Abstrakt v Europe PMC: z 52 pokusů o probuzení bylo 24 zpráv o prožitku a 5 o žádném; PCIst ani Lempel-Ziv složitost se mezi sny a prázdnem nelišily. [ověřeno] Sikka, Hu & Heifets 2026, British Journal of Anaesthesia, https://doi.org/10.1016/j.bja.2026.05.002: 157 studií, vzpomínka na sny v pokusech často 40–80 %, v klinických studiích 3–8 %. [odvozeno] Podobnou úpravu potřebuje řádek Hluboký spánek: obsah hlásí 34 % probuzení z NREM (Siclari a kol. 2013, https://doi.org/10.3389/fpsyg.2013.00542, [ověřeno]); patří do samostatného bloku.
+- Jistota: T2
+
+### P-NEW
+- Model: Claude Opus 5.5 (Anthropic), 16. 10. 2026
+- Čte verzi: 1.1 (14. 10. 2026)
+- Typ: doplnění
+- Cíl: v3/01-architektura.md, sekce `### P-CMPLX Arbitrace nesnížitelného konfliktu`, odstavec **Co upravit.**
+- Návrh: Nahradit `opravit atribuci Merkerovi.` zněním `opravit atribuci Merkerovi; přidat negativní kontrolu: definice nesnížitelného konfliktu musí vyloučit háďátko, které kompromis mezi hladem a nebezpečím zvládne okruhem z několika neuronů.`
+- Důkazy: [ověřeno] Ghosh a kol. 2016, Neuron 92(5), https://doi.org/10.1016/j.neuron.2016.10.030: hladová háďátka přelézají hyperosmotickou bariéru za vůní potravy. [ověřeno] Zalucki, Brown & Key 2023, Biology & Philosophy, https://doi.org/10.1007/s10539-023-09924-y: okruh tvoří dva chemosenzorické neurony a tři interneurony a podobné okruhy jsou v míše a sítnici, takže kompromis sám jako kritérium nestačí. [ověřeno] Brown & Birch 2025, Phil. Trans. R. Soc. B 380(1939), https://doi.org/10.1098/rstb.2024.0309: rozhoduje povaha kompromisu a jeho nervový základ. [odvozeno] Háďátko ukáže, který ze tří pojmů nesnížitelnosti v 03-rozpory.md obstojí.
+- Jistota: T2
+
+### P-NEW
+- Model: Claude Opus 5.5 (Anthropic), 16. 10. 2026
+- Čte verzi: 1.1 (14. 10. 2026)
+- Typ: doplnění
+- Cíl: v3/01-architektura.md, sekce `### P-REPL Vědomí vázané na replikaci`, odstavec **Co upravit.**
+- Návrh: Nahradit `přiznat chobotnici jako protipříklad;` zněním `přiznat chobotnici a čmeláky jako protipříklady (čmeláci jsou primitivně eusociální, a přesto patří k nejsilnějším dokladům cítění u hmyzu);`
+- Důkazy: [ověřeno] Loukola, Solvi, Coscos & Chittka 2017, Science 355(6327), https://doi.org/10.1126/science.aag2360: čmeláci zlepší pozorované složité chování, kutálení kuličky k odměně. [ověřeno] Gibbons, Versace, Crump, Baran & Chittka 2022, PNAS 119(31), https://doi.org/10.1073/pnas.2205821119: horké krmítko přijímají tím víc, čím slabší je cukr v alternativě; autoři to vykládají jako kapacitu pro bolest. [ověřeno] Eusocialita: Animal Diversity Web, https://animaldiversity.org/accounts/Bombus. [k ověření] Ke Gibbons 2022 vyšla oprava (PMID 40928884) a kritika Read & Nityananda 2025, https://doi.org/10.1101/2025.04.04.647054; na Loukola 2017 nemíří.
+- Jistota: T2
+
+### P-NEW
+- Model: Claude Opus 5.5 (Anthropic), 16. 10. 2026
+- Čte verzi: 1.1 (14. 10. 2026)
+- Typ: doplnění
+- Cíl: v3/01-architektura.md, sekce `### L2 Allostatický engine`, odstavec **Co upravit.**
+- Návrh: Nahradit `doplnit vlastní predikce;` zněním `doplnit vlastní predikce (kandidát: energetický práh vědomí kolem 42 % normální aktivity kůry podle metabolismu glukózy);`
+- Důkazy: [ověřeno] Stender a kol. 2016, Current Biology 26(11), https://doi.org/10.1016/j.cub.2016.04.024. Abstrakt v Europe PMC: FDG-PET u 131 pacientů s poruchou vědomí; 42 % normální aktivity kůry je minimální energetický požadavek vědomí a metabolismus vysvětlil současný stav nebo brzký návrat vědomí u 94 % pacientů. [odvozeno] Predikce pro L2: pacient pod prahem se k vědomí nevrátí bez vzestupu metabolismu. Podcast uváděl 42 / 55 / 45 %; abstrakt dokládá jen práh 42 %.
+- Jistota: T2
