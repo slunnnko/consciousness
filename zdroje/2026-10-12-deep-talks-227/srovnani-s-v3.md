@@ -4,7 +4,7 @@
 
 - **Čte verzi balíku:** 1.1 (14. 10. 2026)
 - **Zdroj:** podcast DEEP TALKS #227 (12. 10. 2026), celý namluvený modelem Claude Opus 5.5. Shrnutí je v [README.md](README.md).
-- **Značky:** [k ověření] = tvrzení z dílu, jehož zdroj jsem sám neotevřel. [odvozeno] = moje srovnání. Čísla z dílu jsou vodítko k dohledání, ne citace.
+- **Značky:** [ověřeno] = zdroj otevřený 16. 10. 2026 (Crossref, Europe PMC, stránka vydavatele). [k ověření] = tvrzení z dílu, jehož zdroj jsem neotevřel. [odvozeno] = moje srovnání. Čísla z dílu jsou vodítko k dohledání, ne citace.
 
 ## Hlavní závěr
 
@@ -34,27 +34,31 @@ Díl k tomu přidává několik testovatelných predikcí a pět míst, kde by v
 
 ## Kde díl v3 tlačí
 
-1. **Možné erratum v 07, odrážka „Z těla“.**
+1. **Erratum v 07, odrážka „Z těla“.**
    - V3 uvádí jako [ověřeno], že velikost přípravného potenciálu se mění podle fáze dechu (Park a kol. 2020).
-   - Díl tvrdí, že nová analýza týchž dat ze září 2026, na které se podílel Schurger, ukázala tuhle vazbu jako statistický klam. Platit zůstalo jen to, že dobrovolné pohyby přicházejí častěji s výdechem [k ověření].
-   - **Krok:** dohledat reanalýzu. Když platí, druhá věta odrážky jde pryč a Park 2020 zůstane jen jako doklad o výdechu.
+   - [ověřeno] Jeay-Bizot, Chishti, Maoz & Schurger (2026, *PLOS Biology*, https://doi.org/10.1371/journal.pbio.3003982) data přepočítali. Vazbu vytváří confound: amplituda přípravného potenciálu i fáze dechu jsou obě navázané na začátek pohybu a stejný efekt vzniká i v simulovaných datech. Že lidé mačkají tlačítko častěji při výdechu, se potvrdilo.
+   - [k ověření] Skupina autorů Park 2020 v preprintu z dubna 2026 hájí kauzální vliv fáze dechu na přípravný potenciál. Znám jen název.
+   - **Krok:** vazbu na přípravný potenciál označit v 07 jako spornou.
 2. **P-REPL a čmeláci.**
    - P-REPL čeká u eusociálního hmyzu méně individuálního vědomí.
-   - Čmeláci jsou eusociální, a přesto patří k nejsilnějším dokladům cítění u hmyzu. Naučí se pozorováním (kulička do branky) a vyvažují kompromis: horké krmítko proti sladkému roztoku [k ověření].
+   - Čmeláci jsou (primitivně) eusociální, a přesto patří k nejsilnějším dokladům cítění u hmyzu. [ověřeno] Zlepší pozorované složité chování, kutálení kuličky k odměně (Loukola a kol. 2017, https://doi.org/10.1126/science.aag2360). Horké krmítko přijímají tím víc, čím slabší je cukerný roztok v alternativě (Gibbons a kol. 2022, https://doi.org/10.1073/pnas.2205821119).
+   - [k ověření] Ke Gibbons 2022 existuje oprava (PMID 40928884) a kritický preprint Read & Nityananda 2025.
    - Je to druhý protipříklad vedle chobotnice a podporuje doporučení přesunout L0 a P-REPL mimo vrstvy.
 3. **Negativní kontrola pro P-CMPLX** (úvaha 16).
-   - Jednoduchý kompromis zvládne i háďátko. Jeho mechanismus je podle autorů těch studií příliš jednoduchý na prožívání [k ověření].
+   - [ověřeno] Hladové háďátko přeleze hyperosmotickou bariéru za vůní potravy (Ghosh a kol. 2016, https://doi.org/10.1016/j.neuron.2016.10.030). Celý okruh má jen pár neuronů a podobné okruhy jsou v míše a sítnici, které pro prožitek nutné nejsou (Zalucki, Brown & Key 2023, https://doi.org/10.1007/s10539-023-09924-y).
+   - [ověřeno] Brown & Birch (2025, https://doi.org/10.1098/rstb.2024.0309) odpovídají, že rozhoduje povaha kompromisu a jeho nervový základ.
    - Arbitrace konfliktu tedy sama nestačí a P-CMPLX musí háďátko vyloučit. Je to rozpor „P-CMPLX: tři pojmy pod jedním slovem“ a háďátko ukáže, který ze tří pojmů obstojí.
    - Obecně by každá predikce P-* měla projít negativní kontrolou: háďátko, rostlina, neuronová kultura.
 4. **„Bez prožitku“, nebo „nezapamatováno“?** (úvaha 1)
    - L8 tvrdí, že pod PCI kolem 0,31 jde o stavy bez vědomí. Mapa v 05 má u hlubokého spánku „často bez prožitku“.
-   - Díl uvádí opačná data:
-     - z 29 probuzení ze sedace propofolem bylo 24 s prožitkem;
-     - z NREM spánku hlásí obsah 34 % probuzení;
-     - sny z narkózy si v pečlivých pokusech pamatuje 40–80 % lidí (vše [k ověření]).
+   - Data proti tomu, všechna [ověřeno]:
+     - Z 52 pokusů o probuzení ze sedace propofolem bylo 24 zpráv o prožitku a 5 o žádném. PCIst ani Lempel-Ziv sny od prázdna nerozlišily (Bajwa a kol. 2025, https://doi.org/10.1038/s41598-025-12695-z).
+     - Obsah hlásí 34 % probuzení z NREM a 77 % z REM (Siclari a kol. 2013, https://doi.org/10.3389/fpsyg.2013.00542).
+     - Sny z narkózy si v pokusech pamatuje často 40–80 % lidí, v klinických studiích 3–8 % (Sikka, Hu & Heifets 2026, https://doi.org/10.1016/j.bja.2026.05.002).
    - **Návrh:** v L8 psát „bez kapacity pro bohatý prožitek“ nebo „bez zprávy“, ne „bez vědomí“. V mapě oddělit „nehlášeno“ od „neprožito“.
 5. **L2 nemá vlastní predikci.**
-   - Díl uvádí energetický práh: kůra ve vegetativním stavu spotřebuje kolem 42 % normální energie, v minimálním stavu vědomí kolem 55 %, hranice vychází kolem 45 % [k ověření].
+   - [ověřeno] Minimální energetický požadavek vědomí je kolem 42 % normální aktivity kůry (metabolismus glukózy, FDG-PET, 131 pacientů). Hladina metabolismu odpovídala současnému stavu nebo brzkému návratu vědomí u 94 % pacientů (Stender a kol. 2016, https://doi.org/10.1016/j.cub.2016.04.024).
+   - Čísla z dílu (42 / 55 / 45 %) abstraktu neodpovídají: 42 % je práh, ne průměr vegetativního stavu.
    - Je to kotva pro první testovatelnou predikci allostatické vrstvy: energetický rozpočet kůry souvisí s kapacitou vědomí.
 6. **Nosič sjednocení** (04, Úpravy z 11. 7., bod 1; McFadden v §13).
    - Díl k tomu nabízí tři věci:
@@ -86,4 +90,4 @@ Díl k tomu přidává několik testovatelných predikcí a pět míst, kde by v
 
 ## Další krok
 
-Body 1–5 z části „Kde díl v3 tlačí“ jdou převést na bloky P-NEW do [PRISPEVKY.md](../../v3/PRISPEVKY.md) jako kolo 2. Protokol ale chce [ověřeno] jen se zdrojem, který model sám otevřel, a návrh modelu Claude potřebuje podporu jiného modelu nebo autora. Díl je proto jen vodítko a zdroje je potřeba dohledat.
+Body 1–5 z části „Kde díl v3 tlačí“ jsou převedené na bloky P-NEW v [PRISPEVKY.md](../../v3/PRISPEVKY.md) na větvi `kolo-2-claude` (kolo 2). Podle protokolu potřebuje návrh modelu Claude podporu jiného modelu nebo autora.
