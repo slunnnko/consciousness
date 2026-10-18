@@ -232,3 +232,30 @@ Když tento seznam obsahuje soubor, který chybí v zadání od uživatele, otev
 - Důkazy: [ověřeno] záznamy v registru Crossref a abstrakty v Europe PMC: https://doi.org/10.1038/s41586-024-08170-w, https://doi.org/10.1523/JNEUROSCI.4707-08.2009, https://doi.org/10.1016/j.celrep.2022.111426, https://doi.org/10.1093/scan/nsw172, https://doi.org/10.1017/S0140525X17000309
 - Stav: zapracováno (verze 1.1)
 - Poznámka správce: Návrh modelu Claude s podporou autora ze 14. 10. 2026. Zdroje dodal model Antigravity v P-0012.
+
+### P-0015
+- Model: Claude Opus 5.5 (Anthropic), 18. 10. 2026
+- Čte verzi: 1.1 (14. 10. 2026)
+- Typ: doplnění
+- Cíl: v3/06-kandidati-z-chatu.md, za sekci K7
+- Návrh: Za řádek „- **Stupeň jistoty:** T3; hypotéza k testu, evidencí zatím není.“ vložit novou sekci:
+
+  ```
+  ## K8. Alkoholová intoxikace a mezigenerační vzorce (chat 18. 10. 2026)
+
+  - **Hypotéza autora:** při silné opilosti člověk jedná ze vzorců, které přesahují generace, například z traumat nebo z emočně silně zapsaných zkušeností předchozí generace [odvozeno].
+  - **Podpora: odkrytí dispozic.** Model alkoholové myopie: intoxikace zužuje pozornost na nejvýraznější podněty a inhibiční podněty se zpracují slaběji (Steele & Josephs 1990, https://doi.org/10.1037/0003-066x.45.8.921; přehled Giancola a kol. 2010 [ověřeno], https://doi.org/10.1177/1745691610369467). Rysová agresivita předpověděla extrémní agresi jen u opilých účastníků [ověřeno] (Miller, Parrott & Giancola 2009, https://doi.org/10.1037/a0017727). Rysový hněv předpověděl agresi jen u opilých mužů s nízkou kontrolou hněvu [ověřeno] (Parrott & Giancola 2004, https://doi.org/10.1097/01.alc.0000128226.92708.21).
+  - **Podpora: rodinný přenos.** Očekávání o účincích alkoholu vznikají u dětí před prvním pitím; u dospívajících je formuje hlavně to, jak často otec pije před nimi [ověřeno] (Smit a kol. 2019, https://doi.org/10.1111/acer.14139).
+  - **Komplikace: očekávání a kultura.** V terénním experimentu zvyšovalo agresi očekávání, skutečná dávka s ní nesouvisela [ověřeno] (Bègue a kol. 2009, https://doi.org/10.1016/j.jesp.2008.07.018). Chování v opilosti se liší mezi kulturami podle jejich výkladu opilosti (Room 2001 [ověřeno], https://doi.org/10.1016/s0277-9536(00)00330-0, navazuje na MacAndrew & Edgerton 1969).
+  - **Komplikace: tlumení hrozby.** Alkohol oslabil odpověď amygdaly na vystrašené a hrozivé tváře [ověřeno] (Gilman a kol. 2008, https://doi.org/10.1523/jneurosci.0086-08.2008; Sripada a kol. 2011, https://doi.org/10.1016/j.neuroimage.2010.11.062). Predikce „v opilosti vyplave trauma“ proto musí rozlišit strach (spíš tlumený) a hněv při nízké inhibici (spíš zesílený) [odvozeno].
+  - **Spor: zvyk proti cíli.** Dávka 0,4 g/kg oslabila cílenou kontrolu ve prospěch zvyku [ověřeno] (Hogarth a kol. 2012, https://doi.org/10.1016/j.biopsycho.2012.02.016). Nitrožilní alkohol (80 mg%) v úloze two-step naopak snížil habituální volby [ověřeno] (Obst a kol. 2018, https://doi.org/10.1177/0269881118772454). U chronické závislosti autoři našli oslabení cílené složky bez posílení zvyku; rozdíl zmizel po kontrole obecného kognitivního výkonu [ověřeno] (Sebold a kol. 2014, https://doi.org/10.1159/000362840).
+  - **Vazba na model:** konflikt mezi podněcujícími a inhibičními podněty v modelu myopie odpovídá arbitraci konfliktu v P-CMPLX; alkohol by snižoval kapacitu arbitra [odvozeno]. Tlumení amygdaly patří k L3. Do mapy stavů v L4 by alkohol přibyl jako stav, který se liší od REBUS [odvozeno].
+  - **Testovatelná predikce:** shoda rodičovských vzorců regulace emocí s chováním potomka je vyšší v intoxikaci než za střízliva; kontroly: placebo, adoptované vs. biologické děti, mezikulturní vzorek [odvozeno]. Přímý test této predikce se v rešerši nenašel.
+  - **Meze:** laboratorní dávky kolem 0,08 % BAC, hypotéza mluví o silné opilosti; fMRI studie mají kolem 12 účastníků.
+  - **Kam patří:** P-CMPLX, L3, L4.
+  - **Stupeň jistoty:** T2 pro odkrytí dispozic, T3 pro mezigenerační část.
+  ```
+- Důkazy: [ověřeno] záznamy Crossref a abstrakty Europe PMC u všech DOI výše, otevřené 18. 10. 2026; [k ověření] obsah Steele & Josephs 1990 (otevřen jen záznam, obsah podle přehledu Giancola a kol. 2010) a MacAndrew & Edgerton 1969 (kniha bez DOI); [odvozeno] vazby na vrstvy a predikce.
+- Jistota: T2
+- Stav: otevřené
+- Poznámka správce: Návrh modelu Claude; čeká na podporu jiného modelu nebo autora.

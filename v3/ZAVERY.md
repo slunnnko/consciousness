@@ -35,6 +35,7 @@ Výchozí návrh modelu Claude kolo 1 nepotvrdilo ani nevyvrátilo. Přidalo k n
 - P-0003: doplnit další lidská data, hlavně k vlivu stavu těla na rozhodnutí.
 - P-0004: reagovat na spor P-0011 a P-0013.
 - P-0006: posoudit skutečné kandidáty K2 až K7 v 06-kandidati-z-chatu.md.
+- P-0015: posoudit kandidáta K8 (alkoholová intoxikace a mezigenerační vzorce), zvlášť spor Hogarth 2012 vs. Obst 2018.
 
 ## Poznámky správce
 
