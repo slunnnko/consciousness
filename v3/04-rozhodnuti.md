@@ -4,6 +4,8 @@
 
 Body, které musí rozhodnout autor. Doporučení jsou návrhy revize; v textu modelu se projeví až po potvrzení.
 
+**Stav k 16. 11. 2026:** autor rozhodl čtyři body ze sedmi (vrstva 0, A/B hierarchie, módy vědomí, P-MODE5). Otevřené zůstávají P-VAL, přestavba na tři objekty a jazyk reprezentací. Rozhodnutí se do textu 01 a 05 propíšou v dalším kole.
+
 ## Postoj k prožitku (P-VAL)
 
 Na třech místech existují tři různé verze. Model by měl mít jednu.
@@ -13,6 +15,8 @@ Na třech místech existují tři různé verze. Model by měl mít jednu.
 - **c)** Funkcionální agnosticismus (11. 7., z autorových odpovědí): model zůstává u funkcionálních predikcí; autorův sklon k realismu je přiznaný v §12.3 jako možné zkreslení. *(doporučeno)*
 
 *Zdůvodnění:* Stojí na autorových vlastních odpovědích a drží predikce testovatelné. Důsledek: z v3.0 zmizí věta, že P-VAL těžký problém částečně řeší.
+
+**Postoj autora (16. 11. 2026, T3), rozhodnutí otevřené:** Hodnota se dostane do popředí, když získá prioritu nebo vznikne konflikt; slabý konflikt je přítomen vždy, jen pod prahem akce (blíž k a). Základní pocit vytváří mozkový kmen a kůra ho obohacuje (blíž k b). Souvisí s P-0028.
 
 ## Vrstva 0 (replikace)
 
@@ -24,6 +28,8 @@ Brána z 11. 7. čeká na test, který podle revize nemůže rozhodnout.
 
 *Zdůvodnění:* Test proti FEP s volnými cíli nemůže z principu rozhodnout.
 
+**Rozhodnutí autora (16. 11. 2026):** a). Replikace je evoluční historie, ne patro dnešní stavby modelu.
+
 ## A/B hierarchie
 
 Stránky si protiřečí u locked-in syndromu i u mozkové smrti.
@@ -33,6 +39,8 @@ Stránky si protiřečí u locked-in syndromu i u mozkové smrti.
 - **c)** Ponechat beze změny.
 
 *Zdůvodnění:* Vyřazení navrhoval už návrh ze 4. 7.; varianta b dává smysl, pokud má rozlišení zůstat.
+
+**Rozhodnutí autora (16. 11. 2026):** a). Co měla hierarchie rozlišit, pokryjí na mapě stavů osy připojenost a schopnost odpovědět (P-0031).
 
 ## Módy vědomí
 
@@ -44,6 +52,8 @@ Mód 2 i mód 3 slučují stavy, které se chovají opačně.
 
 *Zdůvodnění:* Řeší oba rozpory najednou a odděluje PCI od módů.
 
+**Rozhodnutí autora (16. 11. 2026):** a). Mapa má šest os: kapacita, připojenost, schopnost odpovědět, nabuzení s laděním, myšlenky o sobě a síla očekávání. Měřítko síly očekávání je velikost afektivní reakce na nečekaný výsledek (T3). Pocit já (vlastnictví těla, řízení, hranice já–svět, perspektiva) a reflexe jsou popisky stavu, dokud nebudou mít měřítko. Složky já nemusí v nedvojném stavu zmizet najednou (T3). Navazují P-0031, P-0034 a P-0035.
+
 ## Predikce P-MODE5 (z 11. 7.)
 
 Vznikla z introspektivního pozorování; kam ji zapsat, zůstalo otevřené.
@@ -54,6 +64,8 @@ Vznikla z introspektivního pozorování; kam ji zapsat, zůstalo otevřené.
 
 *Zdůvodnění:* Drží čistou hranici mezi tím, co přišlo z recenzí, a tím, co přišlo z introspekce.
 
+**Rozhodnutí autora (16. 11. 2026):** b). Do stejné poznámky patří i další predikce odvozené z pohledu první osoby.
+
 ## Přestavba na tři objekty (návrh ze 4. 7.)
 
 Theory A, Theory B a přesně lokalizovaná mezera.
@@ -63,6 +75,8 @@ Theory A, Theory B a přesně lokalizovaná mezera.
 - **c)** Odmítnout.
 
 *Zdůvodnění:* Tyto části revize podporuje nezávisle.
+
+**Nový vstup autora (16. 11. 2026, T3), rozhodnutí otevřené:** vrstvy jako patra se závislostmi. Pořadí: živý systém, který udržuje vlastní proměnné (L2, kmen) → konflikt potřeb, vždy aspoň pod prahem (P-CMPLX) → kapacita kůry a thalamu (L8) → já → reflexe a zpráva. L0, L6 a L7 stojí mimo pořadí. Napětí: 05, sekce Kapacita, říká, že každý prožitek vyžaduje kůru s thalamem.
 
 ## Jazyk reprezentací a radikální enaktivismus (P-0010)
 
