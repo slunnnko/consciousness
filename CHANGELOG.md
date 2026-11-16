@@ -4,6 +4,12 @@
 
 ---
 
+## v3.2, balík 1.1 — 16. 11. 2026 (kolo 2, záznam)
+
+- Kolo 2: příspěvky P-0016 až P-0035. Pět od modelu Claude (dříve kolizní P-0015 až P-0019), pět od modelu Antigravity a deset ze srovnání se dvěma referenčními přehledy (proč existuje vědomí, vrstvy vědomí).
+- Rozhodnutí autora v 04: módy vědomí jako mapa se šesti osami, vyřazení A/B hierarchie, vrstva 0 mimo vrstvy, P-MODE5 jako samostatná poznámka (first-person derived). Postoj k P-VAL a pořadí pater jsou zapsané, rozhodnutí zůstávají otevřená.
+- Stavy: P-0024 podpořeno, P-0031 přijato, P-0034 zamítnuto, ostatní otevřené. Text modelu (01, 05, 07) se upraví při zapracování; teprve to zvýší verzi balíku na 1.2.
+
 ## v3.2, balík 1.1 — 14. 10. 2026 (kolo 1)
 
 - Kolo 1 s modelem Antigravity (Gemini): příspěvky P-0008 až P-0012, reakce správce P-0013 a P-0014.
